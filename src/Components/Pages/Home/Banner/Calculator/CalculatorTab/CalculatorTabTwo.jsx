@@ -20,7 +20,7 @@ const CalculatorTabTwo = ({ currencyData, setCurrencyData }) => {
     //     queryFn: async () => {
     //         const fetchData = await axios.get(`https://api.apilayer.com/exchangerates_data/convert?to=${currencyData.value}&from=GBP&amount=1`, {
     //             headers: {
-    //                 apikey: 'T2xiIiLGT74lpNubi61MkKWOR0qu2s46'
+    //                 apikey: 'vKYNotQBrR4Sf1aiN7bPEPN9gEr5OnyU'
     //             }
     //         });
     //         return fetchData.data;
@@ -67,9 +67,9 @@ const CalculatorTabTwo = ({ currencyData, setCurrencyData }) => {
     };
 
     const ChangeTakeCurrencyFor10Divisible = () => {
-      let MyCurrency = ChangeTo10Divisible(buyCurrency);
+        let MyCurrency = ChangeTo10Divisible(buyCurrency);
         let FInalTakeCurrency = MyCurrency / (Rate * (1 + upsell / 100));
-        return FInalTakeCurrency.toFixed(4);  
+        return FInalTakeCurrency.toFixed(4);
     };
 
     const handleSelling = () => {
@@ -77,8 +77,8 @@ const CalculatorTabTwo = ({ currencyData, setCurrencyData }) => {
         const currencyTake = buyCurrency;
         const currentFull = {
             currencyMy: youSell,
-            currencyTake:buyCurrency,
-            currencyTakecurrent:currencyData.value ,
+            currencyTake: buyCurrency,
+            currencyTakecurrent: currencyData.value,
             currencyMycurrent: 'GBP',
             Id: uuidv4(),
             Rate: (Rate * (1 + upsell / 100)).toFixed(4)

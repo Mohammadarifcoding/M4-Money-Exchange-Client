@@ -27,17 +27,17 @@ const Navbar = () => {
     };
 
     return (
-        <div className=" bg-[#93C94E] relative">
+        <div className=" bg-[#1A0D43] relative  text-white">
             <Container>
                 <div className="flex justify-between py-3 container mx-auto items-center">
                     <Link to={'/'}>
-                        <div className="sm:max-w-[300px] max-w-[150px] ">
-                            <img className="w-full h-full" src="/Images/logo.png" alt="" />
+                        <div className="sm:max-w-[100px] max-w-[90px] ">
+                            <img className="w-full h-full" src="/Images/logo.jpg" alt="" />
                         </div>
                     </Link>
 
                     <div className="lg:flex hidden gap-[12px] list-none lg:text-sm md:text-base xl:text-base text-base  bigScreen-navitem items-center">
-                        <NavLink to={'/'} className=" pb-2">
+                        <NavLink to={'/'} className=" pb-2 ">
                             <li>Travel Money </li>
                         </NavLink>
                         <NavLink to={'/exchangeRates'} className=" pb-2">
@@ -56,7 +56,7 @@ const Navbar = () => {
                             <li>Contact Us </li>
                         </NavLink>
                         {user ? (
-                            <div className="dropdown dropdown-end">
+                            <div className="dropdown text-black dropdown-end">
                                 <div tabIndex={0} role="button" className="btn btn-ghost btn-circle avatar">
                                     <div className="w-10 rounded-full">
                                         <img alt="Tailwind CSS Navbar component" src={user?.photoURL || '/Images/user.png'} />
