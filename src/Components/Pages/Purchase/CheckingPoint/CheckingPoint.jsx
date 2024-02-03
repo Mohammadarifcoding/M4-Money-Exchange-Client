@@ -1,16 +1,16 @@
-import { useRef, useState } from 'react';
-import 'react-toastify/dist/ReactToastify.css';
-import { ToastContainer, toast } from 'react-toastify';
 import emailjs from '@emailjs/browser';
-import { v4 as uuidv4 } from 'uuid';
+import { useRef, useState } from 'react';
 import { IoIosCheckbox } from 'react-icons/io';
 import { MdOutlineCheckBoxOutlineBlank } from 'react-icons/md';
-import UseAxious from '../../../../Hook/UseAxious';
 import { Link } from 'react-router-dom';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+import { v4 as uuidv4 } from 'uuid';
+import UseAxious from '../../../../Hook/UseAxious';
 
 const CheckingPoint = ({ setAddressSelected, setNextForm, nextFrom }) => {
     const AddressForm = useRef();
-    let OrdersData = JSON.parse(localStorage.getItem('purchase'))
+    let OrdersData = JSON.parse(localStorage.getItem('purchase'));
     const [address, setAddress] = useState('location');
     const Axious = UseAxious();
     const [Order, setlastOrder] = useState({});
@@ -44,33 +44,32 @@ const CheckingPoint = ({ setAddressSelected, setNextForm, nextFrom }) => {
             if (!selected) {
                 return toast('Please select the rules');
             }
-            
-      
+
             const UserInformation = {
                 Order_Id: uuidv4(),
                 Name: First_Name + ' ' + Last_Name,
                 Email: Email,
                 Phone_Number: Phone_Number,
                 Address: address,
-                Orders:JSON.parse(localStorage.getItem('purchase')),
-                CurrencyName:OrdersData[0].currencyMycurrent,
-                FxAmount:`${OrdersData[0].currencyMy} ${OrdersData[0].currencyMycurrent}`,
-                Rate : OrdersData[0].Rate,
-                TotalMoney : `${OrdersData[0].currencyTake} ${OrdersData[0].currencyTakecurrent}`,
+                Orders: JSON.parse(localStorage.getItem('purchase')),
+                CurrencyName: OrdersData[0].currencyMycurrent,
+                FxAmount: `${OrdersData[0].currencyMy} ${OrdersData[0].currencyMycurrent}`,
+                Rate: OrdersData[0].Rate,
+                TotalMoney: `${OrdersData[0].currencyTake} ${OrdersData[0].currencyTakecurrent}`,
                 Status: 'Pending'
             };
-          
-            console.log(UserInformation.Orders.currencyMycurrent)
+
+            console.log(UserInformation.Orders.currencyMycurrent);
             const tempForm = document.createElement('form');
             tempForm.style.display = 'none';
-            
+
             // Loop through the keys of the UserInformation object and create input fields
             for (const key in UserInformation) {
-              const input = document.createElement('input');
-              input.type = 'text';
-              input.name = key;
-              input.value = UserInformation[key];
-              tempForm.appendChild(input);
+                const input = document.createElement('input');
+                input.type = 'text';
+                input.name = key;
+                input.value = UserInformation[key];
+                tempForm.appendChild(input);
             }
 
             Axious.post('/Order', UserInformation).then((res) => {
@@ -92,7 +91,7 @@ const CheckingPoint = ({ setAddressSelected, setNextForm, nextFrom }) => {
         <div className="mt-28">
             {nextFrom == 1 ? (
                 <>
-                    <h2 className="md:text-2xl sm:text-xl text-xl text-[#4A53A4]">Select a Collection Point</h2>
+                    <h2 className="md:text-2xl sm:text-xl text-xl text-Primary">Select a Collection Point</h2>
 
                     <select
                         value={address}
@@ -103,15 +102,11 @@ const CheckingPoint = ({ setAddressSelected, setNextForm, nextFrom }) => {
                     >
                         <option value="location">Select locaiton</option>
                         <option value="123 QUEENS ROAD BRIGHTON BN1 3WB Tel:01273 030708"> 123 QUEENS ROAD BRIGHTON BN1 3WB Tel:01273 030708</option>
-                        <option
-                            value="35 CHAPEL ROAD WORTHING BN11 1EG Tel: 01903 202702"
-                        >
-                            35 CHAPEL ROAD WORTHING BN11 1EG Tel: 01903 202702
-                        </option>
+                        <option value="35 CHAPEL ROAD WORTHING BN11 1EG Tel: 01903 202702">35 CHAPEL ROAD WORTHING BN11 1EG Tel: 01903 202702</option>
                     </select>
 
                     <div className=" mt-5 flex  justify-end">
-                        <button onClick={GetAddress} className="flex bg-[#93C94E] px-5 py-3 hover:bg-[#678c36] hover:text-white gap-2">
+                        <button onClick={GetAddress} className="flex bg-Secondary px-5 py-3 hover:bg-red-700 text-white gap-2">
                             Next <span> + </span>
                         </button>
                     </div>
@@ -122,7 +117,7 @@ const CheckingPoint = ({ setAddressSelected, setNextForm, nextFrom }) => {
 
             {nextFrom == 2 ? (
                 <>
-                    <h2 className="md:text-2xl sm:text-xl text-xl text-[#4A53A4]">Personal Details</h2>
+                    <h2 className="md:text-2xl sm:text-xl text-xl text-Primary">Personal Details</h2>
 
                     <form ref={AddressForm} onSubmit={getFinishedOrder} className="flex flex-col">
                         <input
@@ -176,11 +171,14 @@ const CheckingPoint = ({ setAddressSelected, setNextForm, nextFrom }) => {
                                     className="text-2xl"
                                 ></MdOutlineCheckBoxOutlineBlank>
                             )}
-                            I accept all the <Link className='text-blue-600 hover:underline' to={'/termsCoditition'}>Terms and condition</Link>
+                            I accept all the{' '}
+                            <Link className="text-blue-600 hover:underline" to={'/termsCoditition'}>
+                                Terms and condition
+                            </Link>
                         </h2>
 
                         <div className="flex  mt-3 md:max-w-[500px] sm:w-full justify-end">
-                            <button type="submit" onClick={GetAddress} className="flex bg-[#93C94E] px-5 py-3 hover:bg-[#678c36] hover:text-white gap-2">
+                            <button type="submit" onClick={GetAddress} className="flex bg-Secondary px-5 py-3 hover:bg-red-700 text-white gap-2">
                                 Next +
                             </button>
                         </div>
@@ -232,12 +230,11 @@ const CheckingPoint = ({ setAddressSelected, setNextForm, nextFrom }) => {
                                     <h2 className="sm:text-xl  ">
                                         You Give{' '}
                                         <span className="font-semibold">
-
                                             : {item?.currencyTake} {item?.currencyTakecurrent}{' '}
                                         </span>{' '}
                                         >> You get{' '}
                                         <span className="font-semibold">
-                                        : {item?.currencyMy} {item?.currencyMycurrent}
+                                            : {item?.currencyMy} {item?.currencyMycurrent}
                                         </span>
                                         (Rate {item?.Rate} )
                                     </h2>
@@ -247,7 +244,7 @@ const CheckingPoint = ({ setAddressSelected, setNextForm, nextFrom }) => {
 
                         <div className="flex justify-center mt-20">
                             <Link to="/">
-                                <button className="btn bg-[#93C94E] px-5 py-3 hover:bg-[#678c36] hover:text-white">Got To Home</button>
+                                <button className="btn bg-Secondary px-5 py-3 hover:bg-red-700 text-white">Got To Home</button>
                             </Link>
                         </div>
                     </div>

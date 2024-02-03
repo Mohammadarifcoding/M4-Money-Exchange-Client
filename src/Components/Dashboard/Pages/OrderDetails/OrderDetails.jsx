@@ -7,7 +7,7 @@ const OrderDetails = () => {
         window.history.back();
     };
 
-    console.log(Data)
+    console.log(Data);
     return (
         <div className="bg-gray-900  min-h-screen flex flex-col">
             <header className="bg-gray-800 py-4">
@@ -48,20 +48,19 @@ const OrderDetails = () => {
                                 <h2 key={index} className="sm:text-xl mt-2">
                                     Customer Give{' '}
                                     <span className="font-semibold">
-                                    : {item?.currencyTake} {item?.currencyTakecurrent}
+                                        : {item?.currencyTake} {item?.currencyTakecurrent}
                                     </span>
                                     >> Customer get{' '}
                                     <span className="font-semibold">
-
                                         : {item?.currencyMy} {item?.currencyMycurrent}
                                     </span>{' '}
-                                    (Rate {(parseFloat(item?.Rate)).toFixed(4)})
+                                    (Rate {parseFloat(item?.Rate).toFixed(4)})
                                 </h2>
                             ))}
                         </div>
                     </div>
                     <div className="flex justify-center mt-20">
-                        <button onClick={goback} className="btn bg-[#93C94E] px-5 py-3 hover:bg-[#678c36] hover:text-white">
+                        <button onClick={goback} className="btn bg-Secondary px-5 py-3 hover:bg-red-700 hover:text-white">
                             Go Back
                         </button>
                     </div>

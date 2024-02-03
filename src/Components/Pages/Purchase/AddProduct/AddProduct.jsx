@@ -146,7 +146,7 @@ const AddProduct = ({ setPurchaseeData, purchaseData, allTheitem, setAllTheItem,
     return (
         <div className=" lg:mt-20 mt-14">
             <div className="">
-                <h2 className="text-[#4A53A4]  font-medium sm:text-2xl text-2xl  ">
+                <h2 className="text-Primary font-medium sm:text-2xl text-2xl  ">
                     Add Currency <span className="text-gray-400"> (maximum 4 currency)</span>
                 </h2>
                 <div className={`${Addproduct ? '' : 'hidden'}  grid xl:grid-cols-4 lg:grid-cols-4 md:grid-cols-2 sm:grid-cols-2 grid-cols-1 items-center mt-10 gap-10`}>
@@ -197,7 +197,7 @@ const AddProduct = ({ setPurchaseeData, purchaseData, allTheitem, setAllTheItem,
                 <div className=" mt-5 flex  justify-end">
                     {Addproduct ? (
                         <>
-                            <button onClick={handleAdding} className="flex bg-[#93C94E] px-5 py-3 hover:bg-[#678c36] hover:text-white gap-2">
+                            <button onClick={handleAdding} className="flex bg-Secondary px-5 py-3 hover:bg-red-700 text-white gap-2">
                                 Add <span> + </span>
                             </button>
                         </>
@@ -207,7 +207,7 @@ const AddProduct = ({ setPurchaseeData, purchaseData, allTheitem, setAllTheItem,
                                 onClick={() => {
                                     setAddProduct(true);
                                 }}
-                                className="flex bg-[#93C94E] px-5 py-3 hover:bg-[#678c36] hover:text-white gap-2"
+                                className="flex bg-Secondary px-5 py-3 hover:bg-red-700 text-white gap-2"
                             >
                                 Add Currency <span> + </span>
                             </button>

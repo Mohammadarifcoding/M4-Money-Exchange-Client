@@ -24,7 +24,7 @@ const Process = ({no}) => {
                 <div
                   className={` ${
                     value.value == no
-                      ? "bg-[#4A53A4] text-white"
+                      ? "bg-Primary text-white"
                       : "bg-white border-2 border-gray-400 text-gray-400"
                   }    rounded-full lg:py-6 lg:px-10 md:py-8 md:px-12 sm:px-12 sm:py-9 px-6 py-4  md:text-4xl sm:text-3xl text-2xl`}
                 >
