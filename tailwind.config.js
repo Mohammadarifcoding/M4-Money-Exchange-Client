@@ -15,7 +15,13 @@ export default {
      lg: '976px',
      xl: '1440px',
     },
-    extend: {},
+    extend: {
+      colors: {
+        Primary: '#1A0D43', // Replace with your desired color code
+         Secondary :'#EB5552',
+         third :'#E4BC67'
+      },
+    },
   },
   plugins: [require("daisyui")],
 }

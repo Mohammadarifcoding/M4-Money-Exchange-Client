@@ -8,12 +8,12 @@
 }
 
 .bigScreen-navitem a.active {
-    border-bottom: 2px solid #ef5250;
+    border-bottom: 2px solid #1a0d43;
 }
 
 .react-tabs__tab--selected {
     color: white !important;
-    background-color: #1e4a9a !important;
+    background-color: #1a0d43 !important;
 }
 
 @keyframes rotate {

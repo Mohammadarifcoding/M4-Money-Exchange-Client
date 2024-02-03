@@ -169,7 +169,7 @@ const CalculatorTabTwo = ({ currencyData, setCurrencyData }) => {
                 </h2>
             </div>
             <div className="flex mt-3">
-                <button onClick={handleSelling} className="btn w-full">
+                <button onClick={handleSelling} className="btn w-full bg-Secondary text-white">
                     Sell Money
                 </button>
             </div>

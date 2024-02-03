@@ -184,7 +184,7 @@ const CalculatorTab = ({ currencyData, setCurrencyData }) => {
                 </h2>
             </div>
             <div onClick={handleBuying} className="flex mt-3">
-                <button className="btn w-full">Buy Money</button>
+                <button className="btn w-full bg-Secondary text-white">Buy Money</button>
             </div>
             <ToastContainer></ToastContainer>
         </div>
