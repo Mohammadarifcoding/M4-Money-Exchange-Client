@@ -106,9 +106,9 @@ const Privacy = () => {
                     data be used except as consented to by you or as otherwise permitted by applicable laws.
                 </p>
                 <p>In some circumstances we may anonymise your Personal Data so that it can no longer be associated with you, in which case we may use such data without further notice to you.</p>
-                <h2 classname="text-xl font-semibold mb-2">5. How we use your Personal Data?</h2>
-                <p classname="mb-4">We use Personal Data and other data you provide to us only for the following purposes permitted by applicable laws:</p>
-                <ul classname="list-disc pl-6 mb-4">
+                <h2 className="text-xl font-semibold mb-2">5. How we use your Personal Data?</h2>
+                <p className="mb-4">We use Personal Data and other data you provide to us only for the following purposes permitted by applicable laws:</p>
+                <ul className="list-disc pl-6 mb-4">
                     <li>
                         <strong>When necessary for the performance of a contract with you:</strong> We may use your data on the basis of our need to perform our obligations under a contract with you,
                         to complete your transactions or other requests made by you, to respond to and process your queries or requests, or to contact you as necessary in connection with our
@@ -150,7 +150,7 @@ const Privacy = () => {
                     use or disclosure of your Personal Data, the purposes for which we process your Personal Data and whether we can achieve those purposes through other means, and the applicable
                     legal requirements. For example:
                 </p>
-                <ul classname="list-disc pl-6 mb-4">
+                <ul className="list-disc pl-6 mb-4">
                     <li>
                         <strong>Legal and Regulatory Requirements:</strong> Worthing FX shall retain Personal Data and transactional data for those periods required to comply with all retention and
                         reporting obligations under applicable laws, including without limitation commercial, tax and anti-money laundering laws and regulations. Generally, this retention period will
@@ -270,11 +270,11 @@ const Privacy = () => {
                     We aim to provide the highest level of customer service possible. If you do experience a problem, we will always seek to resolve this as quickly and efficiently as possible.
                     However, if you are unhappy and would like to make a complaint,{' '}
                 </p>
-                <p classname="font-semibold capitalize my-4">
+                <p className="font-semibold capitalize my-4">
                     {' '}
                     please contact us by <br /> telephone on 01903202702, <br /> e-mail at <span>support@worthingfx.co.uk</span> <br /> or write to
                 </p>
-                <p classname=" italic text-gray-500">Worthing Fx Services, 35 Chapel Road, Worthing, West Sussex, BN11 1 EG</p>
+                <p className=" italic text-gray-500">Worthing Fx Services, 35 Chapel Road, Worthing, West Sussex, BN11 1 EG</p>
             </div>
         </div>
     );

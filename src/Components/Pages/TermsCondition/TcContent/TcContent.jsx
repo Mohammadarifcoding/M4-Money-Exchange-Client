@@ -13,7 +13,7 @@ const TcContent = () => {
                 carefully. By accessing and using the Service, you agree to be bound by the terms of this Agreement.
             </p>
             <h2 className="font-bold text-3xl underline text-center">Terms & Conditions For Travel Money</h2>
-            <h3 className="font-bold text-2xl my-4 text-[#4A54A4]">Your Responsibility</h3>
+            <h3 className="font-bold text-2xl my-4 text-Primary">Your Responsibility</h3>
             <p className="text-normal my-8">
                 You agree that you are fully responsible and will use your own decision for your use of this Website. Our currency converter shows suggestive exchange rates which are updated daily
                 based on 'mid-rate' interbank levels. Foreign exchange rates fluctuate, for a specific quote please contact us. We is in no way obligated to offer rates showed on the converter. Please
@@ -27,7 +27,7 @@ const TcContent = () => {
                 Due to exchange rate fluctuations, Worthing FX have the right to cancel any orders without warning.
             </p>
             {/* option 2 */}
-            <h3 className="font-bold text-2xl my-4 text-[#4A54A4]">PAYMENT TRANSACTIONS</h3>
+            <h3 className="font-bold text-2xl my-4 text-Primary">PAYMENT TRANSACTIONS</h3>
             <li className="text-normal my-8">
                 For a payment instruction from you to be correctly performed, you must deliver us with the information unique identifier (for example, a passport or driving license) which is essential
                 for the correct execution of the Payment instruction. If this is improper, it could result in the payment transaction being delayed the monies transferred being lost.
@@ -54,7 +54,7 @@ const TcContent = () => {
             </li>
 
             {/* option 3 */}
-            <h3 className="font-bold text-2xl my-4 text-[#4A54A4]">Currency Collection</h3>
+            <h3 className="font-bold text-2xl my-4 text-Primary">Currency Collection</h3>
             <p className="text-normal my-8">
                 In-branch Collections must be collected from their selected branch if the Customer has used the Click and Collect service. <br /> <br />
                 The Customer will require to provide the Order confirmation; government approved photographic personal identification (for example, a passport or driving license) and the Payment Card
@@ -62,7 +62,7 @@ const TcContent = () => {
             </p>
 
             {/* option 4 */}
-            <h3 className="font-bold text-2xl my-4 text-[#4A54A4]">Anti-Money Laundering</h3>
+            <h3 className="font-bold text-2xl my-4 text-Primary">Anti-Money Laundering</h3>
             <p className="text-normal my-8">
                 In order to use our Service you must comply with all applicable laws and regulations, including those relating to anti-money laundering regulations. If you fail to do so we reserve the
                 right to prevent you from using our Service to order currency. In order to enable Us to comply with our anti-money laundering and other legal obligations and our internal risk and
@@ -70,7 +70,7 @@ const TcContent = () => {
             </p>
 
             {/* option 5 */}
-            <h3 className="font-bold text-2xl my-4 text-[#4A54A4]">ID Requirements</h3>
+            <h3 className="font-bold text-2xl my-4 text-Primary">ID Requirements</h3>
 
             <li className="text-normal my-8">
                 When collecting your order you will need to provide proof of ID in the form of photographic ID (passport or driving license). In addition, please note that proof of address, such as a
@@ -78,7 +78,7 @@ const TcContent = () => {
             </li>
 
             {/* option 6 */}
-            <h3 className="font-bold text-2xl my-4 text-[#4A54A4]">Use of the Website</h3>
+            <h3 className="font-bold text-2xl my-4 text-Primary">Use of the Website</h3>
 
             <li className="text-normal my-8">
                 This Agreement sets out the base on which we will agree into International Money Transfers and Foreign Currency Exchange with you, and rules each deal.
@@ -94,7 +94,7 @@ const TcContent = () => {
             </li>
 
             {/* option 7 */}
-            <h3 className="font-bold text-2xl my-4 text-[#4A54A4]">Alteration of Terms</h3>
+            <h3 className="font-bold text-2xl my-4 text-Primary">Alteration of Terms</h3>
 
             <p className="text-normal my-8">
                 Worthing FX Services may, at any time, with instant effect, in respect of future orders, change, suspend or withdraw the Website, the Service and these Online Terms and Conditions
@@ -103,7 +103,7 @@ const TcContent = () => {
             </p>
 
             {/* option 8 */}
-            <h3 className="font-bold text-2xl my-4 text-[#4A54A4]">CHANGES</h3>
+            <h3 className="font-bold text-2xl my-4 text-Primary">CHANGES</h3>
 
             <p className="text-normal my-8">
                 We may amend these Terms and Conditions from time to time, for example in order to comply with changes in the law or regulatory requirements or due to changes in market conditions.{' '}
@@ -119,12 +119,12 @@ const TcContent = () => {
             </p>
 
             {/* option 9 */}
-            <h3 className="font-bold text-2xl my-4 text-[#4A54A4]">FORMATION OF CONTRACT</h3>
+            <h3 className="font-bold text-2xl my-4 text-Primary">FORMATION OF CONTRACT</h3>
 
             <p className="text-normal my-8">Each Payment Transaction which we perform for you is a separate contract which incorporates these Terms and Conditions. </p>
 
             {/* option 10 */}
-            <h3 className="font-bold text-2xl my-4 text-[#4A54A4]">DEFINITIONS</h3>
+            <h3 className="font-bold text-2xl my-4 text-Primary">DEFINITIONS</h3>
 
             <p className="text-normal my-8">The following words and phrases are used throughout the Terms and Conditions and the meanings are below </p>
 
@@ -150,14 +150,14 @@ const TcContent = () => {
             <li className="text-normal my-8">The terms "you", "yours", and "user" means you the person who is contracting with us for the provision of Our Services.</li>
 
             {/* option 10 */}
-            <h3 className="font-bold text-2xl my-4 text-[#4A54A4]">OUR OBLIGATIONST</h3>
+            <h3 className="font-bold text-2xl my-4 text-Primary">OUR OBLIGATIONST</h3>
 
             <li className="text-normal my-8">
                 We will be responsible to you for all Payment Transactions that are initiated by you via any of our authorised agents. All our authorised agents are listed on the FCA Register under
                 the name of Worthing FX Services LTD.
             </li>
             {/* option 11 */}
-            <h3 className="font-bold text-2xl my-4 text-[#4A54A4]">YOUR OBLIGATIONST</h3>
+            <h3 className="font-bold text-2xl my-4 text-Primary">YOUR OBLIGATIONST</h3>
 
             <li className="text-normal my-8">You must be at least eighteen (18) years of age.</li>
 
@@ -183,7 +183,7 @@ const TcContent = () => {
                 <li>You are responsible for the completeness and accuracy of all information you provide to us at any time.</li>
 
                 {/* option 12 */}
-                <h3 className="font-bold text-2xl my-4 text-[#4A54A4]">ISSUE OF PAYMENT ORDERS THROUGH OUR WEBSITE</h3>
+                <h3 className="font-bold text-2xl my-4 text-Primary">ISSUE OF PAYMENT ORDERS THROUGH OUR WEBSITE</h3>
 
                 <p className="text-normal my-8">
                     Subject to these Terms and Conditions you will be able to use Our Services by logging into Our Website and giving us your Payment Orders, which are available for Payment
@@ -228,7 +228,7 @@ const TcContent = () => {
                 </li>
 
                 {/* option 13 */}
-                <h3 className="font-bold text-2xl my-4 text-[#4A54A4]">IX. EXECUTION OF PAYMENT INSTRUCTIONS</h3>
+                <h3 className="font-bold text-2xl my-4 text-Primary">IX. EXECUTION OF PAYMENT INSTRUCTIONS</h3>
 
                 <li>Your relationship is with Brighton FX Services LTD.</li>
 
@@ -309,7 +309,7 @@ const TcContent = () => {
                 </p>
 
                 {/* option 14 */}
-                <h3 className="font-bold text-2xl my-4 text-[#4A54A4]">Cancellations and Refund</h3>
+                <h3 className="font-bold text-2xl my-4 text-Primary">Cancellations and Refund</h3>
 
                 <p>
                     You may cancel a payment order at any time up until it is executed. Once executed, you cannot cancel or amend a payment order. You may exercise this right to cancel in the
@@ -352,7 +352,7 @@ const TcContent = () => {
                 </li>
 
                 {/* option 15*/}
-                <h3 className="font-bold text-2xl my-4 text-[#4A54A4]">Cancellations and Refund</h3>
+                <h3 className="font-bold text-2xl my-4 text-Primary">Cancellations and Refund</h3>
 
                 <p>
                     We have no liability and do not accept any responsibility to you for: o any goods or services which you pay for by using the Service; <br />
@@ -391,7 +391,7 @@ const TcContent = () => {
                 </p>
 
                 {/* option 16*/}
-                <h3 className="font-bold text-2xl my-4 text-[#4A54A4]">Cancellations and Refund</h3>
+                <h3 className="font-bold text-2xl my-4 text-Primary">Cancellations and Refund</h3>
 
                 <p>o We reserve the right, at our sole discretion, to:</p>
 
@@ -416,7 +416,7 @@ const TcContent = () => {
                 </p>
 
                 {/* option 16*/}
-                <h3 className="font-bold text-2xl my-4 text-[#4A54A4]">Contact US</h3>
+                <h3 className="font-bold text-2xl my-4 text-Primary">Contact US</h3>
 
                 <p>
                     We aim to provide the highest level of customer service possible. If you do experience a problem, we will always seek to resolve this as quickly and efficiently as possible.

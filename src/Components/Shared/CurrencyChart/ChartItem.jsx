@@ -25,7 +25,7 @@ const ChartItem = ({ item }) => {
                         onClick={() => {
                             nav(`/purchase/${item?.value}/Order`);
                         }}
-                        className="bg-[#93C94E] hover:bg-[#6c923a] hover:text-white xl:text-xl lg:text-lg px-3 py-2 rounded-lg flex items-center gap-2"
+                        className="bg-Secondary hover:bg-[#b52e2b] text-white xl:text-xl lg:text-lg px-3 py-2 rounded-lg flex items-center gap-2"
                     >
                         CLICK & COLLECT <IoIosArrowForward></IoIosArrowForward>{' '}
                     </button>
@@ -37,7 +37,7 @@ const ChartItem = ({ item }) => {
                             onClick={() => {
                                 nav(`/purchase/${item?.value}/Sell`);
                             }}
-                            className="bg-[#93C94E] hover:bg-[#6c923a] hover:text-white xl:text-xl lg:text-lg px-3 py-2 rounded-lg flex items-center gap-2"
+                            className="bg-Secondary hover:bg-[#b52e2b] text-white xl:text-xl lg:text-lg px-3 py-2 rounded-lg flex items-center gap-2"
                         >
                             CLICK & SELL <IoIosArrowForward></IoIosArrowForward>{' '}
                         </button>

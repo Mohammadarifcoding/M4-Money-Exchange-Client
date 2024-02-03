@@ -15,7 +15,9 @@
     color: white !important;
     background-color: #1a0d43 !important;
 }
-
+.fdfad{
+  color: #b52e2b;
+}
 @keyframes rotate {
     from {
         transform: rotate(0deg);

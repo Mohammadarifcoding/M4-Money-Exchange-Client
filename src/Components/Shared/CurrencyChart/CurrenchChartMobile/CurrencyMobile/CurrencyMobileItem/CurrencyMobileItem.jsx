@@ -42,7 +42,7 @@ const CurrencyMobileItem = ({ item, num }) => {
                             onClick={() => {
                                 nav(`/purchase/${item?.value}/Order`);
                             }}
-                            className="bg-[#93C94E] text-sm hover:bg-[#6c923a] hover:text-white  px-3 py-1 rounded-lg flex items-center gap-2"
+                            className="bg-Secondary text-sm hover:bg-[#b52e2b] text-white  px-3 py-1 rounded-lg flex items-center gap-2"
                         >
                             CLICK & <br />
                             COLLECT <IoIosArrowForward></IoIosArrowForward>{' '}
@@ -55,7 +55,7 @@ const CurrencyMobileItem = ({ item, num }) => {
                                 onClick={() => {
                                     nav(`/purchase/${item?.value}/Sell`);
                                 }}
-                                className="bg-[#93C94E] text-sm flex-nowrap  hover:bg-[#6c923a] hover:text-white  px-3 py-1 rounded-lg flex items-center gap-2"
+                                className="bg-Secondary text-sm flex-nowrap  hover:bg-[#b52e2b] text-white  px-3 py-1 rounded-lg flex items-center gap-2"
                             >
                                 CLICK & <br /> SELL <IoIosArrowForward></IoIosArrowForward>{' '}
                             </button>
