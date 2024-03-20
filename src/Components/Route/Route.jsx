@@ -91,7 +91,7 @@ const router = createBrowserRouter([
             {
                 path: 'orderDetails/:id',
                 element: <OrderDetails></OrderDetails>,
-                loader: ({ params }) => fetch(`https://brighton-fx-server.vercel.app/details/${params.id}`)
+                loader: ({ params }) => fetch(`https://m4-server.vercel.app/details/${params.id}`)
             },
             {
                 path: 'activeOrders',
@@ -100,7 +100,7 @@ const router = createBrowserRouter([
             {
                 path: 'update/:currency',
                 element: <UpdateCurrency></UpdateCurrency>,
-                loader: ({ params }) => fetch(`https://brighton-fx-server.vercel.app/singleCurrency/${params.currency}`)
+                loader: ({ params }) => fetch(`https://m4-server.vercel.app/singleCurrency/${params.currency}`)
             },
             {
                 path:'Users',

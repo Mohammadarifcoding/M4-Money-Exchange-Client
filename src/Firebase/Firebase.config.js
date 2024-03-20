@@ -6,12 +6,12 @@ import {getAuth} from 'firebase/auth'
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-  apiKey: "AIzaSyA3qKToDZu1YEs7S1Lh7US_h9mN9CL8YAM",
-  authDomain: "brighthonfx.firebaseapp.com",
-  projectId: "brighthonfx",
-  storageBucket: "brighthonfx.appspot.com",
-  messagingSenderId: "711861804409",
-  appId: "1:711861804409:web:21ac0bc4ffaf0c8aa363a8"
+  apiKey: "AIzaSyBRfrLQuvuftgAIb32I5jb2kxYAIZsNQD0",
+  authDomain: "m4-money-exchange.firebaseapp.com",
+  projectId: "m4-money-exchange",
+  storageBucket: "m4-money-exchange.appspot.com",
+  messagingSenderId: "299927617073",
+  appId: "1:299927617073:web:a2a18eccf0cc1809f3df10"
 };
 
 // Initialize Firebase

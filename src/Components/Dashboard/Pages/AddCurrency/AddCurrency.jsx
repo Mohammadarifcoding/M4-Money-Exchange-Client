@@ -32,7 +32,7 @@ const AddCurrency = () => {
         axios
             .get(`https://api.apilayer.com/exchangerates_data/convert?to=${currencyName}&from=GBP&amount=1`, {
                 headers: {
-                    apikey: 'vKYNotQBrR4Sf1aiN7bPEPN9gEr5OnyU'
+                    apikey: 'T2xiIiLGT74lpNubi61MkKWOR0qu2s46'
                 }
             })
             .then((res) => {
@@ -81,7 +81,7 @@ const AddCurrency = () => {
                             placeholder="Currency Name"
                             className="px-4 py-2 rounded-md focus:outline-none focus:ring text-black focus:border-blue-300"
                         />
-                        <label htmlFor="CountryName" className="text-lg text-gray-200">
+                         <label htmlFor="CountryName" className="text-lg text-gray-200">
                             Country Name
                         </label>
                         <input
@@ -102,7 +102,7 @@ const AddCurrency = () => {
                             placeholder="Sell Rate"
                             className="px-4 py-2 rounded-md focus:outline-none focus:ring text-black focus:border-blue-300"
                         />
-                        <label htmlFor="currencyName" className="text-lg text-gray-200">
+                         <label htmlFor="currencyName" className="text-lg text-gray-200">
                             Buy Rate
                         </label>
                         <input
