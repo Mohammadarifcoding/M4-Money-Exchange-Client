@@ -19,7 +19,7 @@ const DashBoardLayout = () => {
         <>
 
         <div className='lg:flex hidden  min-h-screen '>
-            <div className='lg:w-[22%] bg-[#222D32] fixed overflow-y-auto pb-20 top-0 h-full w-full lg:block hidden border-r-[5px] border-[#3e3857]'>
+            <div className='lg:w-[22%] bg-[#060173] fixed overflow-y-auto pb-20 top-0 h-full w-full lg:block hidden border-r-[5px] border-[#3e3857]'>
 
                 <div className='px-[20px] mt-16 dashboarItem '>
                     <h2 className='text-white text-center text-xl mb-10'>DashBoard</h2>

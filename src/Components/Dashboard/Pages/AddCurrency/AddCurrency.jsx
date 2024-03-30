@@ -63,7 +63,7 @@ const AddCurrency = () => {
             });
     };
     return (
-        <div className="bg-gray-900 text-white min-h-screen flex flex-col">
+        <div className="bg-[#021431] text-white min-h-screen flex flex-col">
             <header className="bg-gray-800 py-4">
                 <h1 className="text-3xl text-center font-bold">Currency Dashboard</h1>
             </header>

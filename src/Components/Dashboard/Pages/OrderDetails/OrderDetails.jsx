@@ -9,7 +9,7 @@ const OrderDetails = () => {
 
     console.log(Data)
     return (
-        <div className="bg-gray-900  min-h-screen flex flex-col">
+        <div className="bg-[#021431]  min-h-screen flex flex-col">
             <header className="bg-gray-800 py-4">
                 <h1 className="text-3xl text-center font-bold">Order Details</h1>
             </header>
