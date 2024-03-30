@@ -1,6 +1,8 @@
-import { Outlet } from 'react-router-dom';
-import Footer from '../Components/Shared/Footer/Footer';
-import Navbar from '../Components/Shared/Navbar/Navbar';
+import { Helmet } from "react-helmet";
+import { Outlet } from "react-router-dom";
+import Footer from "../Components/Shared/Footer/Footer";
+import Navbar from "../Components/Shared/Navbar/Navbar";
+
 
 const Layout = () => {
     // const { data: curenc, isLoading:NotGettingCurrency } = useQuery({
@@ -8,7 +10,7 @@ const Layout = () => {
     //     queryFn: async () => {
     //         const fetchData = await axios.get(`https://api.apilayer.com/exchangerates_data/convert?to=${item.value}&from=GBP&amount=1`, {
     //             headers: {
-    //                 apikey: 'vKYNotQBrR4Sf1aiN7bPEPN9gEr5OnyU'
+    //                 apikey: 'T2xiIiLGT74lpNubi61MkKWOR0qu2s46'
     //             }
     //         });
     //         return fetchData.data;
@@ -23,11 +25,17 @@ const Layout = () => {
     //       })
     //    }
     // },[NotGettingCurrency,item.value,Axious])
+
     return (
         <div className="overflow-hidden ">
             <Navbar></Navbar>
             <Outlet></Outlet>
             <Footer></Footer>
+            <Helmet>
+        <meta name="description" content="Zero commission, competitive rates, and the convenience of click
+& collect at M4. Choose from over 70 currencies for your
+next adventure." />
+      </Helmet>
         </div>
     );
 };

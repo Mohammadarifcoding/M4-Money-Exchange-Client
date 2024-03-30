@@ -15,13 +15,12 @@ import Purchase from '../Pages/Purchase/Purchase';
 import SendMoney from '../Pages/SendMoney/SendMoney';
 import SignUp from '../Pages/SignUp/SignUp';
 import TermsCodition from '../Pages/TermsCondition/TermsCodition';
-import TravelMoney from '../Pages/TravelMoney/TravelMoney';
 
+import History from '../Dashboard/Pages/Orders/History';
+import Statics from '../Dashboard/Pages/Statics/Statics';
+import UserRole from '../Dashboard/Pages/User Role/UserRole';
 import SignIn from '../Pages/SignIn/SignIn';
 import PrivateProvider from './../../Provider/PrivateProvider';
-import UserRole from '../Dashboard/Pages/User Role/UserRole';
-import Statics from '../Dashboard/Pages/Statics/Statics';
-import History from '../Dashboard/Pages/Orders/History';
 import Privacy from './../Pages/Privacy/Privacy';
 
 

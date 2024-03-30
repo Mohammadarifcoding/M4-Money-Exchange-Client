@@ -5,7 +5,7 @@ const CompareCurrencies = () => {
   const data = [
     {
       currency:'0.00',
-      place:'BRIGHTON FX'
+      place:'M4'
     },
     {
       currency:'0.00',

@@ -2,12 +2,12 @@ const TcContent = () => {
     return (
         <div className="max-w-[1470px] mx-5 lg:mx-auto  my-12">
             <h2 className="font-semibold text-lg text-justify">
-                Brighton FX is a trading name of Worthing FX Services LTD, a company incorporated in England with registered number 10874304 whose registered address is at 35 Chapel Road, Worthing,
+                M4 is a trading name of Worthing FX Services LTD, a company incorporated in England with registered number 10874304 whose registered address is at 35 Chapel Road, Worthing,
                 West Sussex, BN11 1EG is authorised by the Financial Conduct Authority (“FCA”) under the Payment Services Regulations 2009 (SI 2009 No. 209) (the “Regulations”) for the provision of
-                payment services with FCA register number 942118 and trades under the name 'Brighton FX, Worthing FX, WORFX' (hereinafter "we”, “our” or “us”).
+                payment services with FCA register number 942118 and trades under the name 'M4, Worthing FX, WORFX' (hereinafter "we”, “our” or “us”).
             </h2>
             <p className="text-normal my-8">
-                1. These terms and conditions (the “Terms and Conditions”) are applicable to and are available on our website www.brightonfx.com (“Our Website”). They explain your responsibilities to
+                1. These terms and conditions (the “Terms and Conditions”) are applicable to and are available on our website www.M4.com (“Our Website”). They explain your responsibilities to
                 us and our responsibilities to you, including (i) how our agreement with you can be terminated prior to completion of a Payment Transaction, (ii) under what circumstances a Payment
                 Order may be cancelled and (iii) the extent of our liability to you. These Terms set out your legal rights and obligations when using the Service. We recommend that you read these
                 carefully. By accessing and using the Service, you agree to be bound by the terms of this Agreement.
@@ -230,12 +230,12 @@ const TcContent = () => {
                 {/* option 13 */}
                 <h3 className="font-bold text-2xl my-4 text-Primary">IX. EXECUTION OF PAYMENT INSTRUCTIONS</h3>
 
-                <li>Your relationship is with Brighton FX Services LTD.</li>
+                <li>Your relationship is with M4 Services LTD.</li>
 
                 <li>We will execute all Payment Orders as soon as practicable after they have been submitted on Business Days.</li>
 
                 <li>
-                    All currency converted under the Service is converted at our rate of exchange. All the expenses that you must pay to Brighton FX must be established on your receipt, as well as the
+                    All currency converted under the Service is converted at our rate of exchange. All the expenses that you must pay to M4 must be established on your receipt, as well as the
                     method of calculating the exchange rate or interest rate that will apply to the transaction, and the corresponding date and the rate or reference used in that calculation method
                 </li>
 
@@ -319,18 +319,18 @@ const TcContent = () => {
                 <p> A. by telephoning us on 01903 202702 OR 01273 030708</p>
                 <p>B. by writing to us at 35 Chapel Road, Worthing, West Sussex, BN11 1EG OR 123 Queens Road, Brighton, BN1 3WB</p>
 
-                <p>C. by emailing us at support@worthingfx.co.uk OR support@brightonfx.com </p>
+                <p>C. by emailing us at support@worthingfx.co.uk OR support@M4.com </p>
 
                 <li>
                     Refunds of the Money Transfer amount, and subsequent cancellation of the underlying transaction, will be made upon the User's valid written request if payment of the Money Transfer
-                    has not yet been made to the Beneficiary at the time the refund request is processed by Brighton FX. To stop a payment, Brighton FX first will have to check with its paying
-                    correspondent to determine whether payment of the Money Transfer has been made to the Beneficiary. If Brighton FX can confirm that payment has not been made, the funds will be
-                    returned and Brighton FX will refund such amount to the User, less any applicable fees and/or service charges. Except in the case of events beyond Brighton FX's control, it is
+                    has not yet been made to the Beneficiary at the time the refund request is processed by M4. To stop a payment, M4 first will have to check with its paying
+                    correspondent to determine whether payment of the Money Transfer has been made to the Beneficiary. If M4 can confirm that payment has not been made, the funds will be
+                    returned and M4 will refund such amount to the User, less any applicable fees and/or service charges. Except in the case of events beyond M4's control, it is
                     policy to refund the amount of the Money Transfer within fifteen (15) business days after receipt of the written refund request. In cases where the Money Transfer funds were not
-                    made available to the Beneficiary within the time frame specified by Brighton FX for the Service, subject to the regular business hours at the Money Transfer destination location,
-                    Brighton FX shall refund the Money Transfer fee as well as the Money Transfer amount within fifteen (15) business days after receipt of the User's written request to refund same.
-                    Normally, these funds should be in Brighton FX's possession within fifteen (15) business days. Please note that refunds may take longer to process where internal Compliance checks
-                    are required and/or Compliance related queries need to be addressed . Should a refund be delayed for any reason, Brighton FX will notify the respective User.
+                    made available to the Beneficiary within the time frame specified by M4 for the Service, subject to the regular business hours at the Money Transfer destination location,
+                    M4 shall refund the Money Transfer fee as well as the Money Transfer amount within fifteen (15) business days after receipt of the User's written request to refund same.
+                    Normally, these funds should be in M4's possession within fifteen (15) business days. Please note that refunds may take longer to process where internal Compliance checks
+                    are required and/or Compliance related queries need to be addressed . Should a refund be delayed for any reason, M4 will notify the respective User.
                 </li>
 
                 <li>Where you cancel a Payment Order or where we cannot complete a Payment Transaction for any reason, we will arrange for a full refund.</li>
@@ -358,7 +358,7 @@ const TcContent = () => {
                     We have no liability and do not accept any responsibility to you for: o any goods or services which you pay for by using the Service; <br />
                     o malfunctions in communications facilities which cannot reasonably be considered to be under our control and that may affect the accuracy or timeliness of messages you send to us;
                     <br />
-                    o errors in our Site or with our Brighton FX Online Service caused by incomplete or incorrect information provided to us by you or a third party, or for any unauthorised use of
+                    o errors in our Site or with our M4 Online Service caused by incomplete or incorrect information provided to us by you or a third party, or for any unauthorised use of
                     your password or account e-mail (which you are responsible for keeping confidential);
                     <br />
                     o any losses or delays in transmission of messages arising out of the use of any internet access service provider or caused by any browser or other software which is not under our
@@ -435,7 +435,7 @@ const TcContent = () => {
                 <br />
 
                 <h3>
-                    Brighton FX 123 Queens Road <br />
+                    M4 123 Queens Road <br />
                     Brighton <br />
                     BN1 3WB <br />
                 </h3>

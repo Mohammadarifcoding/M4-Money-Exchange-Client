@@ -10,7 +10,7 @@ const Privacy = () => {
                     mobile applications or otherwise interact with us in the European Economic Area (“EEA”), how we share your information and the steps we take to protect your information.
                 </p>
                 <h2 className="text-xl font-semibold mt-4 mb-2">1. Who we are and the application of this Privacy Notice</h2>
-                <p>This Privacy Notice applies to Worthing FX Services Ltd, which trades under Worthing FX, Brighton FX, and WORFX (“we”, “our” or “us”).</p>
+                <p>This Privacy Notice applies to Worthing FX Services Ltd, which trades under Worthing FX, M4, and WORFX (“we”, “our” or “us”).</p>
                 <p>
                     We are committed to the privacy and security of your Personal Data (as defined in section 2 below). This Privacy Notice describes how we collect and use Personal Data, in
                     accordance with applicable law and our standards of ethical conduct.

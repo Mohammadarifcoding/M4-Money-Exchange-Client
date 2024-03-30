@@ -1,6 +1,6 @@
-import React from 'react';
-import { IoIosArrowForward } from 'react-icons/io';
-import { useNavigate } from 'react-router-dom';
+import React from "react";
+import { IoIosArrowForward } from "react-icons/io";
+import { useNavigate } from "react-router-dom";
 
 const CurrencyMobileItem = ({ item, num }) => {
     const nav = useNavigate();
@@ -10,7 +10,7 @@ const CurrencyMobileItem = ({ item, num }) => {
     //     queryFn: async () => {
     //         const fetchData = await axios.get(`https://api.apilayer.com/exchangerates_data/convert?to=${item.value}&from=GBP&amount=1`, {
     //             headers: {
-    //                 apikey: 'vKYNotQBrR4Sf1aiN7bPEPN9gEr5OnyU'
+    //                 apikey: 'T2xiIiLGT74lpNubi61MkKWOR0qu2s46'
     //             }
     //         });
     //         return fetchData.data;
@@ -42,10 +42,10 @@ const CurrencyMobileItem = ({ item, num }) => {
                             onClick={() => {
                                 nav(`/purchase/${item?.value}/Order`);
                             }}
-                            className="bg-Secondary text-sm hover:bg-[#b52e2b] text-white  px-3 py-1 rounded-lg flex items-center gap-2"
+                            className="bg-Secondary hover:bg-[#b52e2b] text-white xl:text-xl lg:text-lg px-3 py-2 rounded-lg flex items-center gap-2"
                         >
                             CLICK & <br />
-                            COLLECT <IoIosArrowForward></IoIosArrowForward>{' '}
+                            COLLECT <IoIosArrowForward></IoIosArrowForward>{" "}
                         </button>
                     </div>
                 ) : (
@@ -55,9 +55,9 @@ const CurrencyMobileItem = ({ item, num }) => {
                                 onClick={() => {
                                     nav(`/purchase/${item?.value}/Sell`);
                                 }}
-                                className="bg-Secondary text-sm flex-nowrap  hover:bg-[#b52e2b] text-white  px-3 py-1 rounded-lg flex items-center gap-2"
+                                className="bg-Secondary hover:bg-[#b52e2b] text-white xl:text-xl lg:text-lg px-3 py-2 rounded-lg flex items-center gap-2"
                             >
-                                CLICK & <br /> SELL <IoIosArrowForward></IoIosArrowForward>{' '}
+                                CLICK & <br /> SELL <IoIosArrowForward></IoIosArrowForward>{" "}
                             </button>
                         </div>
                     </div>

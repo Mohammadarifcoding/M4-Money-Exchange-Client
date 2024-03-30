@@ -17,9 +17,7 @@ const Banner = () => {
                 Global Currency Connect
               </h2>
               <p className="text-gray-300  lg:ml-0 lg:mr-auto mx-auto  pt-4 lg:text-start text-center max-w-[500px] md:text-xl sm:text-lg text-base">
-                Streamlining currency exchange worldwide. Your trusted partner
-                for seamless, secure, and efficient transactions across
-                international borders.
+              Streamlining currency exchange worldwide. Your trusted partner for seamless, secure, and efficient transactions across international borders.
               </p>
             </div>
             <div className="lg:w-1/2 w-full flex justify-center items-center">

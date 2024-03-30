@@ -1,14 +1,14 @@
-import React, { useEffect, useState } from 'react';
-import Container from '../Container/Container';
-import { IoIosArrowForward } from 'react-icons/io';
+import React, { useEffect, useState } from "react";
+import Container from "../Container/Container";
+import { IoIosArrowForward } from "react-icons/io";
 
-import ChartItem from './ChartItem';
-import CurrencyChartMobile from './CurrenchChartMobile/CurrencyChartMobile';
-import { useQuery } from '@tanstack/react-query';
-import UseAxious from '../../../Hook/UseAxious';
+import ChartItem from "./ChartItem";
+import CurrencyChartMobile from "./CurrenchChartMobile/CurrencyChartMobile";
+import { useQuery } from "@tanstack/react-query";
+import UseAxious from "../../../Hook/UseAxious";
 
 const CurrencyChart = ({ currency }) => {
-    const [inputField, setInputField] = useState('');
+    const [inputField, setInputField] = useState("");
     const [showAll, setShowAll] = useState(false);
     const [fullData, setFullData] = useState([...currency]);
 
@@ -19,14 +19,14 @@ const CurrencyChart = ({ currency }) => {
     };
 
     useEffect(() => {
-        if (inputField == '') {
+        if (inputField == "") {
             setFullData(currency);
         }
     }, [inputField, currency]);
     return (
         <Container>
             <div className="my-32">
-                <h2 className="text-Primary lg:text-6xl sm:text-2xl text-xl  font-semibold lg:text-start text-center">Find your Currency</h2>
+            <h2 className="text-Primary lg:text-6xl sm:text-2xl text-xl  font-semibold lg:text-start text-center">Find your Currency</h2>
                 <div className="flex md:items-center justify-between mt-10 bg-Primary md:flex-row flex-col px-4 py-5">
                     <h2 className="font-semibold gap-3 text-white sm:text-xl text-sm">Enter a currency name</h2>
                     <div className="max-w-[400px]  w-full md:mt-0 mt-4">

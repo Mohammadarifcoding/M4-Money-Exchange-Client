@@ -20,7 +20,7 @@ const CalculatorTabTwo = ({ currencyData, setCurrencyData }) => {
     //     queryFn: async () => {
     //         const fetchData = await axios.get(`https://api.apilayer.com/exchangerates_data/convert?to=${currencyData.value}&from=GBP&amount=1`, {
     //             headers: {
-    //                 apikey: 'vKYNotQBrR4Sf1aiN7bPEPN9gEr5OnyU'
+    //                 apikey: 'T2xiIiLGT74lpNubi61MkKWOR0qu2s46'
     //             }
     //         });
     //         return fetchData.data;
@@ -167,6 +167,7 @@ const CalculatorTabTwo = ({ currencyData, setCurrencyData }) => {
                 <h2 className="mt-3 text-lg">
                     1 GBP = {((Rate ?? 1) * (1 + upsell / 100)).toFixed(4)} {currencyData.value}
                 </h2>
+                <p className='text-[10px] font-normal '>Online rate only - rates in branch will differ</p>
             </div>
             <div className="flex mt-3">
                 <button onClick={handleSelling} className="btn w-full bg-Secondary hover:bg-red-800 text-white">

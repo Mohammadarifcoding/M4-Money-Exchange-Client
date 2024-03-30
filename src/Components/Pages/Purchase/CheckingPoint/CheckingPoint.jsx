@@ -5,17 +5,17 @@ import { MdOutlineCheckBoxOutlineBlank } from 'react-icons/md';
 import { Link } from 'react-router-dom';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
-import { v4 as uuidv4 } from 'uuid';
 import UseAxious from '../../../../Hook/UseAxious';
+import generateRandomAlphabet from './../../../ExtraFuntion/GenerateUniqueId';
 
-const CheckingPoint = ({ setAddressSelected, setNextForm, nextFrom }) => {
+const CheckingPoint = ({ setAddressSelected, setNextForm, nextFrom, currentWay }) => {
     const AddressForm = useRef();
     let OrdersData = JSON.parse(localStorage.getItem('purchase'));
     const [address, setAddress] = useState('location');
     const Axious = UseAxious();
     const [Order, setlastOrder] = useState({});
     const [selected, setSelected] = useState(false);
-
+    console.log(currentWay);
     const GetAddress = () => {
         if (address == 'location') {
             return toast('Select the checking point');
@@ -46,18 +46,46 @@ const CheckingPoint = ({ setAddressSelected, setNextForm, nextFrom }) => {
             }
 
             const UserInformation = {
-                Order_Id: uuidv4(),
+                Order_Id: generateRandomAlphabet(),
                 Name: First_Name + ' ' + Last_Name,
                 Email: Email,
                 Phone_Number: Phone_Number,
                 Address: address,
                 Orders: JSON.parse(localStorage.getItem('purchase')),
-                CurrencyName: OrdersData[0].currencyMycurrent,
-                FxAmount: `${OrdersData[0].currencyMy} ${OrdersData[0].currencyMycurrent}`,
+                status: '',
+                CurrencyName: '',
+                FxAmount: ``,
                 Rate: OrdersData[0].Rate,
-                TotalMoney: `${OrdersData[0].currencyTake} ${OrdersData[0].currencyTakecurrent}`,
-                Status: 'Pending'
+                TotalMoney: ``,
+                Status: 'Pending',
+                title: '',
+                SecondRow: '',
+                FourthRow: '',
+                time: new Date()
             };
+            if (currentWay == 'Order') {
+                UserInformation.title = 'Click & Collect';
+                UserInformation.SecondRow = 'Amount';
+                UserInformation.FourthRow = 'Fx Amount';
+                UserInformation.FxAmount = `${OrdersData[0].currencyMy} ${OrdersData[0].currencyMycurrent}`;
+                UserInformation.TotalMoney = `${OrdersData[0].currencyTake} ${OrdersData[0].currencyTakecurrent}`;
+                UserInformation.CurrencyName = OrdersData[0].currencyMycurrent;
+                UserInformation.status = 'buy';
+                UserInformation.secondTitle = `Collecting your order :`;
+                UserInformation.secondMessege = `When collecting your order, you will need to provide proof of ID in the form of photographic ID (passport or driving license). Please note that proof of address, such as a utility bill or a bank/credit card statement dated within the past 90 days, may also be needed in certain circumstances.`,
+               UserInformation.firstMessege = `Your order ${UserInformation.Order_Id} is currently being processed, and we will notify you when it is ready for collection from our Branch - ${UserInformation.Address}.`;
+               
+            } else if (currentWay == 'Sell') {
+                UserInformation.title = 'Click & Sell';
+                UserInformation.SecondRow = 'Fx Amount';
+                UserInformation.FourthRow = 'Amount';
+                UserInformation.FxAmount = ` ${OrdersData[0].currencyMy} ${OrdersData[0].currencyMycurrent}`;
+                UserInformation.TotalMoney = `${OrdersData[0].currencyTake} ${OrdersData[0].currencyTakecurrent}`;
+                UserInformation.CurrencyName = OrdersData[0].currencyTakecurrent;
+                UserInformation.status = 'sell';
+                UserInformation.firstMessege = `Thank you for your order. Please bring this email or order number ${UserInformation.Order_Id} with you to your selected location to sell your foreign currency.`;
+                UserInformation.note = 'Note: Click & Sell rates are subject to verification of all banknotes at the premises. We may decline to accept notes which are found to be counterfeited, out of date, torn or damaged or insignificant in value. We do not accept foreign coins. Our Click & Sell rate does not apply to large denomination notes such as Euro 500. Different rates will apply for those denominations. For full terms and conditions, visit our website.'
+            }
 
             console.log(UserInformation.Orders.currencyMycurrent);
             const tempForm = document.createElement('form');
@@ -106,7 +134,7 @@ const CheckingPoint = ({ setAddressSelected, setNextForm, nextFrom }) => {
                     </select>
 
                     <div className=" mt-5 flex  justify-end">
-                        <button onClick={GetAddress} className="flex bg-Secondary px-5 py-3 hover:bg-red-700 text-white gap-2">
+                        <button onClick={GetAddress} className="flex bg-Secondary  px-5 py-3 hover:bg-red-700 text-white gap-2">
                             Next <span> + </span>
                         </button>
                     </div>
@@ -178,7 +206,7 @@ const CheckingPoint = ({ setAddressSelected, setNextForm, nextFrom }) => {
                         </h2>
 
                         <div className="flex  mt-3 md:max-w-[500px] sm:w-full justify-end">
-                            <button type="submit" onClick={GetAddress} className="flex bg-Secondary px-5 py-3 hover:bg-red-700 text-white gap-2">
+                            <button type="submit" onClick={GetAddress} className="flex bg-Secondary  px-5 py-3 hover:bg-red-700 text-white gap-2">
                                 Next +
                             </button>
                         </div>
@@ -244,7 +272,7 @@ const CheckingPoint = ({ setAddressSelected, setNextForm, nextFrom }) => {
 
                         <div className="flex justify-center mt-20">
                             <Link to="/">
-                                <button className="btn bg-Secondary px-5 py-3 hover:bg-red-700 text-white">Got To Home</button>
+                                <button className="btn bg-Secondary  px-5 py-3 hover:bg-[#678c36] hover:text-white">Got To Home</button>
                             </Link>
                         </div>
                     </div>

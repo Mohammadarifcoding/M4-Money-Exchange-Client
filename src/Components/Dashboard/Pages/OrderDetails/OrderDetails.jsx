@@ -7,8 +7,6 @@ const OrderDetails = () => {
         window.history.back();
     };
 
-    
-
     console.log(Data)
     return (
         <div className="bg-gray-900  min-h-screen flex flex-col">

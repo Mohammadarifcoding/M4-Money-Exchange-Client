@@ -21,7 +21,7 @@ const CalculatorTab = ({ currencyData, setCurrencyData }) => {
     //     queryFn: async () => {
     //         const fetchData = await axios.get(`https://api.apilayer.com/exchangerates_data/convert?to=${currencyData.value}&from=GBP&amount=1`, {
     //             headers: {
-    //                 apikey: 'vKYNotQBrR4Sf1aiN7bPEPN9gEr5OnyU'
+    //                 apikey: 'T2xiIiLGT74lpNubi61MkKWOR0qu2s46'
     //             }
     //         });
     //         return fetchData.data;
@@ -74,19 +74,19 @@ const CalculatorTab = ({ currencyData, setCurrencyData }) => {
 
     const ChangeTakeCurrencyFor10Divisible = () => {
         let MyCurrency = ChangeTo10Divisible(buyCurrency);
-        let FInalTakeCurrency = MyCurrency / (Rate * (1 + upbuy / 100));
-        return FInalTakeCurrency.toFixed(2);
-    };
+          let FInalTakeCurrency =  MyCurrency / (Rate * (1 + (upbuy / 100))) ;
+          return FInalTakeCurrency.toFixed(2);  
+      };
     const handleBuying = () => {
         const currencyMy = youSell;
         const currencyTake = buyCurrency;
         const currentFull = {
             currencyMy: ChangeTo10Divisible(buyCurrency),
             currencyTake: ChangeTakeCurrencyFor10Divisible(),
-            currencyMycurrent: currencyData.value,
-            currencyTakecurrent: 'GBP',
+            currencyMycurrent:  currencyData.value,
+            currencyTakecurrent:'GBP',
             Id: uuidv4(),
-            Rate: (Rate * (1 + upbuy / 100)).toFixed(4)
+            Rate: (Rate * (1 + (upbuy / 100))).toFixed(4)
         };
         if (currencyMy <= 0) {
             nav(`/purchase/${currencyData.value}/Order`);
@@ -182,6 +182,7 @@ const CalculatorTab = ({ currencyData, setCurrencyData }) => {
                         </>
                     )}
                 </h2>
+                <p className='text-[10px] font-normal '>Online rate only - rates in branch will differ</p>
             </div>
             <div onClick={handleBuying} className="flex mt-3">
                 <button className="btn w-full bg-Secondary text-white hover:bg-red-800">Buy Money</button>
