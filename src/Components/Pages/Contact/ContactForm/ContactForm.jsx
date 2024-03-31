@@ -31,10 +31,6 @@ const ContacthtmlForm = () => {
                         />
 
                         <div className="bg-white relative flex flex-wrap py-6 rounded shadow-md">
-                            <div className="lg:w-1/2 px-6">
-                                <h2 className="title-font font-bold text-gray-900 tracking-widest md:text-xl sm:text-lg text-base">Worthing FX Office</h2>
-                                <p className="mt-1 md:text-base text-sm">35 CHAPEL RD WORTHING BN11 1EG Tel:01903 202702</p>
-                            </div>
                             <div className="lg:w-1/2 w-full px-6 mt-6">
                                 <h2 className="title-font font-bold text-gray-900 tracking-widest md:text-xl sm:text-lg text-base">M4 Travel</h2>
                                 <p className="mt-1 md:text-base text-sm">707 Green Ln, Dagenham RM8 1UU, Tel:02082622041</p>

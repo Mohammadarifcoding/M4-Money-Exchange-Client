@@ -88,7 +88,7 @@ const Footer = () => {
    <div className="w-full md:w-1/2 lg:w-1/4 mb-4 md:mb-0">
      <h2 className="text-2xl font-bold mb-3">GET IN TOUCH</h2>
      <p className="flex gap-x-4 items-center"><FaMapLocationDot/> 707 Green Ln, Dagenham RM8 1UU,</p>
-     <p className="flex gap-x-4 items-center" > <FaPhoneVolume /> 01273 030708</p>
+     <p className="flex gap-x-4 items-center" > <FaPhoneVolume /> 02082622041</p>
      <p className="flex gap-x-4 items-center" > <IoIosMail />support@M4.com</p>
    </div>
  </div>

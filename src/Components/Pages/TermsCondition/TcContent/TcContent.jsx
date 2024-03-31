@@ -316,7 +316,7 @@ const TcContent = () => {
                     following ways:
                 </p>
 
-                <p> A. by telephoning us on 01903 202702 OR 01273 030708</p>
+                <p> A. by telephoning us on 01903 202702 OR 02082622041</p>
                 <p>B. by writing to us at 35 Chapel Road, Worthing, West Sussex, BN11 1EG OR 123 Queens Road, Brighton, BN1 3WB</p>
 
                 <p>C. by emailing us at support@worthingfx.co.uk OR support@M4.com </p>
@@ -420,7 +420,7 @@ const TcContent = () => {
 
                 <p>
                     We aim to provide the highest level of customer service possible. If you do experience a problem, we will always seek to resolve this as quickly and efficiently as possible.
-                    However, if you are unhappy and would like to make a complaint, please contact us by telephone on 01903202702 or 01273 030708, e-mail at support@worthingfx.co.uk or
+                    However, if you are unhappy and would like to make a complaint, please contact us by telephone on 01903202702 or 02082622041, e-mail at support@worthingfx.co.uk or
                     support@brighton.com or write to
                 </p>
 
