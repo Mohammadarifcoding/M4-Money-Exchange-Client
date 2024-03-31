@@ -19,11 +19,11 @@ const DashBoardLayout = () => {
         <>
 
         <div className='lg:flex hidden  min-h-screen '>
-            <div className='lg:w-[22%] bg-[#060173] fixed overflow-y-auto pb-20 top-0 h-full w-full lg:block hidden border-r-[5px] border-[#3e3857]'>
+            <div className='lg:w-[22%] bg-[#1e1a5e] fixed overflow-y-auto pb-20 top-0 h-full w-full lg:block hidden border-r-[5px] border-[#3e3857]'>
 
                 <div className='px-[20px] mt-16 dashboarItem '>
                     <h2 className='text-white text-center text-xl mb-10'>DashBoard</h2>
-                    <NavLink to='/dashboard/Statics'>
+                    <NavLink to='/dashboard'>
                     <button className='flex p-[20px] w-full  text-white gap-3 text-lg font-medium border-b border-white'>Statics</button>
                     </NavLink>
                     <NavLink to='/dashboard/manageOrders'>
@@ -90,14 +90,14 @@ const DashBoardLayout = () => {
                 direction='right'
                 
                 style={{
-                    backgroundColor:'#222D32',
+                    backgroundColor:'#1e1a5e',
                     
                 }}
-                className='bg-[#222D32] border-l-4 border-[#3e3857]'
+                className=' h-full border-l-4 border-[#3e3857]'
             >
-                <div className='px-[20px] mt-16 dashboarItem'>
+                <div className='px-[20px] mt-16 dashboarItem '>
                 <h2 className='text-white text-center text-xl mb-10'>DashBoard</h2>
-                <NavLink to='/dashboard/Statics'>
+                <NavLink to='/dashboard'>
                     <button className='flex p-[20px] w-full  text-white gap-3 text-lg font-medium border-b border-white'>Statics</button>
                     </NavLink>
                     <NavLink to='/dashboard/manageOrders'>

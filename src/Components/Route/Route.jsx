@@ -106,7 +106,7 @@ const router = createBrowserRouter([
                 element:<UserRole></UserRole>
             },
             {
-                path:'Statics',
+                path:'/dashboard',
                 element:<Statics></Statics>
             },
             {

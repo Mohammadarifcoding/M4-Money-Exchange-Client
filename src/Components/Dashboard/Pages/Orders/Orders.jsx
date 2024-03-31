@@ -169,8 +169,8 @@ const Orders = () => {
                     </div>
                 </div>
             </main>
-            <footer className="bg-[#93C94E] flex justify-center  py-4 text-center">
-                <img className="h-12" src="/public/Images/logo.png" alt="" />
+            <footer className="bg-gray-800 py-4 text-center">
+                <p>© 2024 Orders Dashboard. All rights reserved.</p>
             </footer>
         </div>
     );

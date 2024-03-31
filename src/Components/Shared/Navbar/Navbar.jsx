@@ -68,7 +68,7 @@ const Navbar = () => {
                                 </li>
                                 {checkingAdminAcess ? (
                                     <li>
-                                        <Link to={'/dashboard/Currency'}>Dashboard</Link>
+                                        <Link to={'/dashboard'}>Dashboard</Link>
                                     </li>
                                 ) : (
                                     ''
@@ -131,7 +131,7 @@ const Navbar = () => {
                                         </li>
                                         {checkingAdminAcess ? (
                                             <li>
-                                                <Link to={'/dashboard/Currency'}>Dashboard</Link>
+                                                <Link to={'/dashboard'}>Dashboard</Link>
                                             </li>
                                         ) : (
                                             ''
