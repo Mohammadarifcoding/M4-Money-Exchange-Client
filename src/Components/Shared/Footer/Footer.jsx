@@ -87,14 +87,15 @@ const Footer = () => {
    </div>
    <div className="w-full md:w-1/2 lg:w-1/4 mb-4 md:mb-0">
      <h2 className="text-2xl font-bold mb-3">GET IN TOUCH</h2>
-     <p className="flex gap-x-4 items-center"><FaMapLocationDot/> 123 Queens road Brighton BN1 3WB</p>
+     <p className="flex gap-x-4 items-center"><FaMapLocationDot/> 707 Green Ln, Dagenham RM8 1UU,</p>
      <p className="flex gap-x-4 items-center" > <FaPhoneVolume /> 01273 030708</p>
      <p className="flex gap-x-4 items-center" > <IoIosMail />support@M4.com</p>
    </div>
  </div>
 </div >
 {/* copyright Section */}
-<h2 className="text-white text-[15px] mt-16  mb-3 ">M4 IS A TRADING NAME OF WORTHING FX SERVICES LTD,REGISTERED IN ENGLAND AND WALES UNDER NUMBER 10874304,REGISTERED ADDRESS:123 QUEENS ROAD, BRIGHTHON, BN1 3WB. </h2>
+<h2 className="text-white text-[15px] mt-16  mb-3 ">M4FX IS A TRADING NAME OF M4 TRADING LIMITED,REGISTERED IN ENGLAND AND WALES UNDER COMPANY NUMBER 10520708,REGISTERED ADDRESS:707 GREEN LANE, DAGENHAM, RM8 1UU
+Copyright © 2024 M4 All rights reserved.</h2>
 <div className="border-t-2">
 <div className=" px-20 py-4 flex justify-between ">
  <p>Copyright © 2024 M4 All rights reserved.</p>

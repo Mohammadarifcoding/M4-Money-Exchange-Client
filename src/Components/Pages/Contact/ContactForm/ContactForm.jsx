@@ -20,7 +20,7 @@ const ContacthtmlForm = () => {
                         /> */}
 
                         <iframe
-                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2520.344714160969!2d-0.14551752439320267!3d50.824778560342224!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4875850b54e4e365%3A0xc0d52c097a0eb22e!2zMTIzIFF1ZWVucyBSZCwgQnJpZ2h0b24gYW5kIEhvdmUsIEJyaWdodG9uLCDgpq_gp4HgppXgp43gpqTgprDgpr7gppzgp43gpq8!5e0!3m2!1sbn!2sbd!4v1707184540809!5m2!1sbn!2sbd"
+                            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d310.0425061960009!2d0.1235464!3d51.5619994!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47d8a44bff798c9d%3A0x2bc5a946e82b56eb!2sM4%20Travel%2C%20Money%20Transfer%20%26%20Cargo%2C%20DHL%2C%20UPS%20%26%20Chip%20Air%20Tickets!5e0!3m2!1sbn!2sbd!4v1711899968254!5m2!1sbn!2sbd"
                             width="100%"
                             height="100%"
                             className="absolute inset-0"
@@ -36,14 +36,14 @@ const ContacthtmlForm = () => {
                                 <p className="mt-1 md:text-base text-sm">35 CHAPEL RD WORTHING BN11 1EG Tel:01903 202702</p>
                             </div>
                             <div className="lg:w-1/2 w-full px-6 mt-6">
-                                <h2 className="title-font font-bold text-gray-900 tracking-widest md:text-xl sm:text-lg text-base">M4</h2>
-                                <p className="mt-1 md:text-base text-sm">123 QUEENS ROAD BRIGHTON BN1 3WB Tel:01273 030708</p>
+                                <h2 className="title-font font-bold text-gray-900 tracking-widest md:text-xl sm:text-lg text-base">M4 Travel</h2>
+                                <p className="mt-1 md:text-base text-sm">707 Green Ln, Dagenham RM8 1UU, Tel:02082622041</p>
                             </div>
                             <div className="lg:w-1/2 px-6 mt-8 lg:mt-0">
                                 <h2 className="title-font font-semibold text-gray-900 tracking-widest text-small">EMAIL</h2>
                                 <a className="text-indigo-500 leading-relaxed md:text-base text-sm">support@M4.com </a>
                                 <h2 className="title-font font-semibold text-gray-900 tracking-widest text-small mt-4">PHONE</h2>
-                                <p className="leading-relaxed md:text-base text-sm">01273030708</p>
+                                <p className="leading-relaxed md:text-base text-sm">02082622041</p>
                             </div>
                         </div>
                     </div>
