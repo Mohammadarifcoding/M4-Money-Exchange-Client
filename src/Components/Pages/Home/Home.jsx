@@ -17,8 +17,8 @@ const Home = () => {
         <div>
             <Banner></Banner>
             <Commitment></Commitment>
-            <CurrencyChart currency={currency}></CurrencyChart>
             <Features></Features>
+            <CurrencyChart currency={currency}></CurrencyChart>
             <StoreFind></StoreFind>
             <CompareCurrencies></CompareCurrencies> 
             <Accordin></Accordin>          
