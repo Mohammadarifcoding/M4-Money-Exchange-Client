@@ -319,7 +319,7 @@ const TcContent = () => {
                 <p> A. by telephoning us on 01903 202702 OR 02082622041</p>
                 <p>B. by writing to us at 35 Chapel Road, Worthing, West Sussex, BN11 1EG OR 123 Queens Road, Brighton, BN1 3WB</p>
 
-                <p>C. by emailing us at support@worthingfx.co.uk OR support@M4.com </p>
+                <p>C. by emailing us at support@worthingfx.co.uk OR contact@m4fx.co.uk </p>
 
                 <li>
                     Refunds of the Money Transfer amount, and subsequent cancellation of the underlying transaction, will be made upon the User's valid written request if payment of the Money Transfer

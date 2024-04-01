@@ -8,6 +8,7 @@ import Commitment from "./Commitment/Commitment";
 import CompareCurrencies from "./CompareCurrencies/CompareCurrencies";
 import Download from "./Download/Download";
 import Features from "./Features/Features";
+import Registered from "./Registered/Registered";
 import StoreFind from "./StoreFind/StoreFind";
 
 
@@ -22,7 +23,8 @@ const Home = () => {
             <StoreFind></StoreFind>
             <CompareCurrencies></CompareCurrencies> 
             <Accordin></Accordin>          
-            <Download></Download>
+            {/* <Download></Download> */}
+        <Registered></Registered>
             
         </div>
     );

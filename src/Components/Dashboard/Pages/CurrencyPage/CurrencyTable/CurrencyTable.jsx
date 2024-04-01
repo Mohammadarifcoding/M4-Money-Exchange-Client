@@ -40,6 +40,9 @@ const CurrencyTable = ({currency}) => {
                 <th className="py-3 text-start pl-4 md:text-base sm:text-sm text-[12px]">
                   Action
                 </th>
+                <th className="py-3 text-start pl-4 md:text-base sm:text-sm text-[12px]">
+                  Delete
+                </th>
               </tr>
             </thead>
             <tbody>

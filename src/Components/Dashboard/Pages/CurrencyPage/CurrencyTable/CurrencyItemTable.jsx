@@ -6,6 +6,7 @@ import UseAxious from '../../../../../Hook/UseAxious';
 import UseCurrency from '../../../../../Hook/UseCurrency';
 import UseUpsell from '../../../../../Hook/UseUpsell';
 import { AuthContext } from '../../../../../Provider/AuthProvider';
+import Swal from 'sweetalert2';
 
 const CurrencyItemTable = ({ item }) => {
     const { UpdateCurrencyData, SetUpdateCurrencyData } = useContext(AuthContext);
@@ -69,6 +70,27 @@ const CurrencyItemTable = ({ item }) => {
     const SellValue = item?.Sell / 100 + 1;
     const BuyValue = item?.Buy / 100 + 1;
 
+
+    const DeleteCurrency = (value)=>{
+        Swal.fire({
+            title: "Are you sure?",
+            text: "You won't be able to revert this!",
+            icon: "warning",
+            showCancelButton: true,
+            confirmButtonColor: "#3085d6",
+            cancelButtonColor: "#d33",
+            confirmButtonText: "Yes, delete it!"
+          }).then((result) => {
+            if (result.isConfirmed) {
+              Swal.fire({
+                title: `Deleted ${value}! `,
+                text: "Your Currency has been deleted.",
+                icon: "success"
+              });
+            }
+          });
+    }
+
     return (
         <tr className="text-start" key={item?.value}>
             <td className="py-2 pl-4 md:text-base sm:text-sm text-[12px]">{item?.value} -></td>
@@ -97,6 +119,9 @@ const CurrencyItemTable = ({ item }) => {
                 <Link to={`/dashboard/update/${item?.value}`}>
                     <button className="bg-blue-500 hover:bg-blue-600 text-white font-semibold py-2 px-4 border border-blue-500 rounded shadow">Update</button>
                 </Link>
+            </td>
+            <td  className="py-2 pl-4 md:text-base sm:text-sm text-[12px]">
+                <button onClick={()=>{DeleteCurrency(item?.value)}} className="bg-red-500 hover:bg-red-600 text-white font-semibold py-2 px-4 border border-red-500 rounded shadow">Delete</button>
             </td>
         </tr>
     );

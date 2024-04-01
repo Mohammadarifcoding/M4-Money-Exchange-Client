@@ -37,7 +37,7 @@ const ContacthtmlForm = () => {
                             </div>
                             <div className="lg:w-1/2 px-6 mt-8 lg:mt-0">
                                 <h2 className="title-font font-semibold text-gray-900 tracking-widest text-small">EMAIL</h2>
-                                <a className="text-indigo-500 leading-relaxed md:text-base text-sm">support@M4.com </a>
+                                <a className="text-indigo-500 leading-relaxed md:text-base text-sm">contact@m4fx.co.uk </a>
                                 <h2 className="title-font font-semibold text-gray-900 tracking-widest text-small mt-4">PHONE</h2>
                                 <p className="leading-relaxed md:text-base text-sm">02082622041</p>
                             </div>

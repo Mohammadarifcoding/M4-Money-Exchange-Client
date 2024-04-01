@@ -43,9 +43,6 @@ const Navbar = () => {
                     <NavLink to={'/exchangeRates'} className=" pb-2">
                         <li>Exchange Rates </li>
                     </NavLink>
-                    <NavLink to={'https://online.worthingfx.com/'} className=" pb-2">
-                        <li>Money Transfers </li>
-                    </NavLink>
                     <NavLink to={'/termsCoditition'} className=" pb-2">
                         <li>Terms & Condition </li>
                     </NavLink>
@@ -105,9 +102,6 @@ const Navbar = () => {
                             </NavLink>
                             <NavLink to={'/exchangeRates'} className=" pb-2 px-4 border-b border-white">
                                 <li>Exchange Rates </li>
-                            </NavLink>
-                            <NavLink to={'https://online.worthingfx.com/'} className=" pb-2 px-4 border-b border-white">
-                                <li>Money Transfers </li>
                             </NavLink>
                             <NavLink to={'/termsCoditition'} className=" pb-2 px-4 border-b border-white">
                                 <li>Terms & Condition </li>
