@@ -7,10 +7,14 @@ import moment from 'moment';
 import { MdDeleteForever } from 'react-icons/md';
 import { FaInfoCircle } from 'react-icons/fa';
 import UseAllOrders from '../../../../Hook/UseAllOrders';
+import { useState } from 'react';
 
 const AllOrders = () => {
     const [AllOrder, RefetchAllOrder] = UseAllOrders()
+    const [search , setSearch] = useState('')
     const Axious = UseAxious();
+
+    const [AllOrdersCopy,setAllOrdersCopy] = useState([...AllOrder])
 
     const handleRemoveOrder = (orderId) => {
         // Logic to accept the order with orderId
@@ -36,12 +40,26 @@ const AllOrders = () => {
             }
         });
     };
+
+    const handleSearch = ()=>{
+        console.log(search)
+        
+       const allItem = [...AllOrder] 
+       const findTheItem = allItem.filter(item => item.Order_Id == parseInt(search))
+       setAllOrdersCopy([...findTheItem])
+       console.log(findTheItem)
+    }
     return (
         <div className="bg-[#021431] text-white min-h-screen flex flex-col">
         <header className="bg-gray-800 py-4">
             <h1 className="text-3xl text-center font-bold">All Orders</h1>
         </header>
+
         <main className="flex-1 p-6 mt-10">
+        <div className='flex justify-start gap-1 '>
+              <input onChange={(e)=>{setSearch(e.target.value)}} type="text" className='rounded-md text-black px-3 py-2 focus:outline-none' /> 
+              <button onClick={handleSearch} className='px-3 py-2 bg-[#1F2937] hover:scale-105 transition-all duration-200 rounded-lg'>Search </button>
+        </div>
             <div className="overflow-x-auto mt-4">
                 <div className="min-w-max sm:min-w-max">
                     {/* Option for admin to set percentage increase */}
@@ -62,7 +80,7 @@ const AllOrders = () => {
                             </tr>
                         </thead>
                         <tbody>
-                            {AllOrder?.map((order) => (
+                            {AllOrdersCopy?.map((order) => (
                                 <tr key={order?._id} className="text-start">
                                     <td className="py-2 pl-4">{order?.Order_Id}</td>
                                     <td className="py-2 pl-4">{order?.Name}</td>
