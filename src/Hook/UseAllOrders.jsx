@@ -2,7 +2,7 @@
 import UseAxious from './UseAxious';
 import { useQuery } from '@tanstack/react-query';
 
-const AllOrders = () => {
+const UseAllOrders = () => {
     const Axious  = UseAxious()
 
 
@@ -16,4 +16,4 @@ const AllOrders = () => {
     return [AllOrder,RefetchAllOrder]
 };
 
-export default AllOrders;
+export default UseAllOrders;

@@ -35,6 +35,9 @@ const DashBoardLayout = () => {
                     <NavLink to='/dashboard/history'>
                     <button className='flex p-[20px] w-full  text-white gap-3 text-lg font-medium border-b border-white'>History</button>
                     </NavLink>
+                    <NavLink to='/dashboard/allOrders'>
+                    <button className='flex p-[20px] w-full  text-white gap-3 text-lg font-medium border-b border-white'>All Orders</button>
+                    </NavLink>
                     <NavLink to='/dashboard/Currency'>
                     <button className='flex p-[20px] w-full  text-white gap-3 text-lg font-medium border-b border-white'>Currency</button>
                     </NavLink>
@@ -108,6 +111,9 @@ const DashBoardLayout = () => {
                     </NavLink>
                     <NavLink to='/dashboard/history'>
                     <button className='flex p-[20px] w-full  text-white gap-3 text-lg font-medium border-b border-white'>History</button>
+                    </NavLink>
+                    <NavLink to='/dashboard/allOrders'>
+                    <button className='flex p-[20px] w-full  text-white gap-3 text-lg font-medium border-b border-white'>All Orders</button>
                     </NavLink>
                     <NavLink to='/dashboard/Currency'>
                     <button className='flex p-[20px] w-full  text-white gap-3 text-lg font-medium border-b border-white'>Currency</button>

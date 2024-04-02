@@ -22,6 +22,7 @@ import UserRole from '../Dashboard/Pages/User Role/UserRole';
 import SignIn from '../Pages/SignIn/SignIn';
 import PrivateProvider from './../../Provider/PrivateProvider';
 import Privacy from './../Pages/Privacy/Privacy';
+import AllOrders from '../Dashboard/Pages/Orders/AllOrders';
 
 
 const router = createBrowserRouter([
@@ -86,6 +87,10 @@ const router = createBrowserRouter([
             {
                 path: 'manageOrders',
                 element: <Orders></Orders>
+            },
+            {
+                path:'allOrders',
+                element:<AllOrders></AllOrders>
             },
             {
                 path: 'orderDetails/:id',
