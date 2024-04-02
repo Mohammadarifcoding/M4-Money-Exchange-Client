@@ -82,11 +82,16 @@ const CurrencyItemTable = ({ item }) => {
             confirmButtonText: "Yes, delete it!"
           }).then((result) => {
             if (result.isConfirmed) {
-              Swal.fire({
-                title: `Deleted ${value}! `,
-                text: "Your Currency has been deleted.",
-                icon: "success"
-              });
+                Axious.delete(`/currencyDelete/${value}`)
+                .then(item => {
+                    refetch()
+                    Swal.fire({
+                        title: `Deleted ${value}! `,
+                        text: "Your Currency has been deleted.",
+                        icon: "success"
+                      });
+                })
+              
             }
           });
     }
