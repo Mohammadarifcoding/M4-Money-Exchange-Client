@@ -8,9 +8,19 @@ import { IoNotificationsCircle } from "react-icons/io5";
 import 'react-modern-drawer/dist/index.css'
 import { Link, NavLink, Outlet } from 'react-router-dom';
 import Container from '../../Shared/Container/Container';
+import UseCurrency from '../../../Hook/UseCurrency';
+import UseAllOrders from '../../../Hook/UseAllOrders';
+import PendingOrder from '../../../Hook/PendingOrder';
+import UseCompletedOrder from '../../../Hook/UseCompletedOrder';
+import UseAcceptedOrder from '../../../Hook/UseAcceptedOrder';
 
 const DashBoardLayout = () => {
     const [isOpen, setIsOpen] = useState(false)
+    const [currency,refetchCurrency] = UseCurrency()
+    const [AllOrders,RefetchAllOrder] = UseAllOrders()
+    const [PendingOrders,RefetchPendingOrder] = PendingOrder()
+    const [CompletedOrders,RefetchCompletedOrder] = UseCompletedOrder()
+    const [AcceptedOrders,RefetchAcceptedOrder] = UseAcceptedOrder()
     const toggleDrawer = () => {
         setIsOpen((prevState) => !prevState)
     }

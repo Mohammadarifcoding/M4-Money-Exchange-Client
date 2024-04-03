@@ -31,8 +31,8 @@ const Navbar = () => {
         <Container>
             <div className="flex justify-between py-3 container mx-auto items-center">
                 <Link to={'/'}>
-                    <div className="sm:max-w-[100px] max-w-[90px] ">
-                        <img className="w-full h-full" src="/Images/logo.jpg" alt="" />
+                    <div className="sm:max-w-[300px] max-w-[200px] ">
+                        <img className="w-full h-full" src="/Images/logo.png" alt="" />
                     </div>
                 </Link>
 
