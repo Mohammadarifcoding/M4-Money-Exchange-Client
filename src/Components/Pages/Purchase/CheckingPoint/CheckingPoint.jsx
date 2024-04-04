@@ -7,6 +7,7 @@ import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import UseAxious from '../../../../Hook/UseAxious';
 import generateRandomAlphabet from './../../../ExtraFuntion/GenerateUniqueId';
+import OrderList from './OrderList/OrderList';
 
 const CheckingPoint = ({ setAddressSelected, setNextForm, nextFrom, currentWay }) => {
     const AddressForm = useRef();
@@ -218,11 +219,11 @@ const CheckingPoint = ({ setAddressSelected, setNextForm, nextFrom, currentWay }
             )}
             {nextFrom == 3 ? (
                 <>
-   <div className="overflow-hidden border border-gray-400">
-  <div className="px-4 py-2 border-b border-gray-400 bg-gray-200">
-    <h1 className="text-lg font-semibold">Order Number: {Order?.Order_Id}</h1>
+   <div className="overflow-auto border border-gray-400">
+  <div className="px-4 py-2 border-b border-gray-400 overflow-auto ">
+    <h1 className="text-xl font-semibold">Order Number: {Order?.Order_Id}</h1>
   </div>
-  <table className="min-w-full">
+  <table className="min-w-full overflow-auto">
     <thead>
       <tr className="border-b border-gray-400">
       <th className="px-4 py-2 text-left  border-r border-gray-400">Currency</th>
@@ -235,20 +236,54 @@ const CheckingPoint = ({ setAddressSelected, setNextForm, nextFrom, currentWay }
     <tbody>
         {
             Order?.Orders?.map((item)=> (
-                <tr className="border-b border-gray-400">
-                      <td className="px-4 py-2 text-left border-r border-gray-400">{item?.status == 'buy' ? currencyTakecurrent : item?.currencyMycurrent }</td>
-                <td className="px-4 py-2 text-left border-r border-gray-400">{item?.currencyTake} {item?.currencyTakecurrent}{' '}</td>
-                <td className="px-4 py-2 text-left border-r border-gray-400">{item?.currencyMy} {item?.currencyMycurrent}</td>
-                <td className="px-4 py-2 text-left border-r border-gray-400">{item?.Rate} GBP</td>
-              
-              </tr>
+                <OrderList item={item}></OrderList>
             ))
         }
-
-
     </tbody>
   </table>
 </div>
+
+<div className="overflow-hidden border mt-10 border-gray-400">
+  <div className="px-4 py-2 border-b border-gray-400 overflow-auto">
+    <h1 className="text-xl font-semibold">Booking Details</h1>
+  </div>
+  <div className="min-w-full">
+
+  <div className='flex border-b border-gray-400'>
+     <div className=' py-3 border-r border-gray-400 font-semibold md:w-[20%] w-[30%] text-center'>
+         Full Name
+     </div>
+     <div className='border-gray-400 py-3 px-4 w-[80%] text-start'>
+         {Order?.Name}
+     </div>
+  </div>
+  <div className='flex  border-b border-gray-400'>
+     <div className=' py-3 border-r border-gray-400 font-semibold md:w-[20%] w-[30%] text-center'>
+        Email
+     </div>
+     <div className='border-gray-400 py-3 px-4 w-[80%] text-start'>
+         {Order?.Email}
+     </div>
+  </div>
+  <div className='flex  border-b border-gray-400'>
+     <div className=' py-3 border-r border-gray-400 font-semibold md:w-[20%] w-[30%] text-center'>
+        Contact
+     </div>
+     <div className='border-gray-400 py-3 px-4 w-[80%] text-start'>
+         {Order?.Phone_Number}
+     </div>
+  </div>
+  <div className='flex '>
+     <div className=' py-3 border-r border-gray-400 font-semibold md:w-[20%] w-[30%] text-center'>
+         Address
+     </div>
+     <div className='border-gray-400 py-3 px-4 w-[80%] text-start'>
+         {Order?.Address}
+     </div>
+  </div>
+</div>
+</div>
+
 
                     <div className="bg-gray-100 py-10  px-6 ">
                         <h2 className="md:text-4xl text-3xl text-center font-medium flex justify-center items-center gap-3">
