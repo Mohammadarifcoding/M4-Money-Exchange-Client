@@ -32,3 +32,13 @@ color: #b52e2b;
   .rotating-icon {
     animation: rotate 2s linear infinite; /* Adjust duration or animation properties as needed */
   }
+
+  @media print {
+    .navbarDelete , .FutureDelete,.deleteButton {
+      display: none;
+    }
+    #significant-place, #significant-place * {
+      display: block !important;
+    }
+  }
+  

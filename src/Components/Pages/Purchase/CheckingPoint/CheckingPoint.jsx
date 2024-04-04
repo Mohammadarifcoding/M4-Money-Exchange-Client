@@ -116,6 +116,11 @@ const CheckingPoint = ({ setAddressSelected, setNextForm, nextFrom, currentWay }
         }
     };
 
+
+   const   handlePrint = () => {
+        window.print(); // This triggers the browser's print dialog
+      };
+    
     console.log(Order)
     return (
         <div className="mt-28">
@@ -218,7 +223,11 @@ const CheckingPoint = ({ setAddressSelected, setNextForm, nextFrom, currentWay }
                 ''
             )}
             {nextFrom == 3 ? (
-                <>
+                <div>
+                <div className='flex deleteButton justify-end '>
+                  <button onClick={handlePrint} className='px-4 py-2 bg-red-600 text-white'>Print</button>
+                </div>
+                {/* Currency Calculation */}
    <div className="overflow-auto border border-gray-400">
   <div className="px-4 py-2 border-b border-gray-400 overflow-auto ">
     <h1 className="text-xl font-semibold">Order Number: {Order?.Order_Id}</h1>
@@ -242,7 +251,7 @@ const CheckingPoint = ({ setAddressSelected, setNextForm, nextFrom, currentWay }
     </tbody>
   </table>
 </div>
-
+{/* User address */}
 <div className="overflow-hidden border mt-10 border-gray-400">
   <div className="px-4 py-2 border-b border-gray-400 overflow-auto">
     <h1 className="text-xl font-semibold">Booking Details</h1>
@@ -284,67 +293,15 @@ const CheckingPoint = ({ setAddressSelected, setNextForm, nextFrom, currentWay }
 </div>
 </div>
 
+<div className='mt-20 flex flex-col gap-8'>
+  <h2 className='sm:text-xl text-lg'>Important Notificaiton</h2>
+  <p className='text-base font-medium'>Please read carefully before you leave for the collection.</p>
+  <p className='text-base font-medium'>Collect your Instore Branch collection order on the same day in between office hours. Kindly read the Terms and conditions for payments and necessary supporting documents.</p>
+  <p className='text-base font-medium'>All orders area accepted subject to stock and denominations availability at your selected branch. A member of our team will be in touch promptly only if the currency booked is not available and advice you alternate collection time. Please print the order confirmation receipt and present on the selected branch counter or you can quote the reference number with your ID for collection.</p>
+  <p className='text-base font-medium'>For Card Payment: Your ID must be in the form of either your valid passport or full UK or European photo Driving Licence, European ID along with your payment bank card which must match the name on the order.</p>
 
-                    <div className="bg-gray-100 py-10  px-6 ">
-                        <h2 className="md:text-4xl text-3xl text-center font-medium flex justify-center items-center gap-3">
-                            {' '}
-                            <img className="w-10 md:block hidden" src="/Images/check-mark.png" alt="" />
-                            Your Order Confirmation
-                        </h2>
-                        <div className="flex md:flex-row flex-col items-start">
-                            <div className="mt-20 flex-1 gap-3 flex flex-col  ">
-                                <h2 className="mb-4 sm:text-2xl text-xl flex items-center gap-2 font-semibold">
-                                    Personal Information <img className="w-6" src="/Images/contract.png" alt="" />
-                                </h2>
-                                <h2 className="sm:text-xl  ">
-                                    {' '}
-                                    <span className="font-medium">Name</span>: {Order?.Name}
-                                </h2>
-                                <h2 className="sm:text-xl ">
-                                    {' '}
-                                    <span className="font-medium">Email</span>: {Order?.Email}
-                                </h2>
-                                <h2 className="sm:text-xl ">
-                                    {' '}
-                                    <span className="font-medium">Phone</span>: {Order?.Phone_Number}
-                                </h2>
-                            </div>
-                            <div className="mt-20 flex-1 gap-3 flex flex-col  ">
-                                <h2 className="mb-4 sm:text-2xl text-xl flex items-center gap-2 font-semibold">
-                                    Order Information <img className="w-6" src="/Images/contract.png" alt="" />
-                                </h2>
-
-                                <h2 className="sm:text-xl">
-                                    {' '}
-                                    <span className="font-semibold">Order Id </span>: {Order?.Order_Id}
-                                </h2>
-                                <h2 className="sm:text-xl my-2">
-                                    {' '}
-                                    <span className="font-semibold">Checking Point </span>: {Order?.Address}
-                                </h2>
-                                {Order?.Orders?.map((item) => (
-                                    <h2 className="sm:text-xl  ">
-                                        You Give{' '}
-                                        <span className="font-semibold">
-                                            : {item?.currencyTake} {item?.currencyTakecurrent}{' '}
-                                        </span>{' '}
-                                        >> You get{' '}
-                                        <span className="font-semibold">
-                                            : {item?.currencyMy} {item?.currencyMycurrent}
-                                        </span>
-                                        (Rate {item?.Rate} )
-                                    </h2>
-                                ))}
-                            </div>
-                        </div>
-
-                        <div className="flex justify-center mt-20">
-                            <Link to="/">
-                                <button className="btn bg-Secondary  px-5 py-3 hover:bg-[#678c36] hover:text-white">Got To Home</button>
-                            </Link>
-                        </div>
-                    </div>
-                </>
+</div>
+                </div>
             ) : (
                 ''
             )}
