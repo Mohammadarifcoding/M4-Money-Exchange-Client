@@ -115,6 +115,7 @@ const CheckingPoint = ({ setAddressSelected, setNextForm, nextFrom, currentWay }
         }
     };
 
+    console.log(Order)
     return (
         <div className="mt-28">
             {nextFrom == 1 ? (
@@ -217,6 +218,38 @@ const CheckingPoint = ({ setAddressSelected, setNextForm, nextFrom, currentWay }
             )}
             {nextFrom == 3 ? (
                 <>
+   <div className="overflow-hidden border border-gray-400">
+  <div className="px-4 py-2 border-b border-gray-400 bg-gray-200">
+    <h1 className="text-lg font-semibold">Order Number: {Order?.Order_Id}</h1>
+  </div>
+  <table className="min-w-full">
+    <thead>
+      <tr className="border-b border-gray-400">
+      <th className="px-4 py-2 text-left  border-r border-gray-400">Currency</th>
+        <th className="px-4 py-2 text-left border-r border-gray-400">From</th>
+        <th className="px-4 py-2 text-left border-r border-gray-400">To</th>
+        <th className="px-4 py-2 text-left border-r border-gray-400">Rate</th>
+
+      </tr>
+    </thead>
+    <tbody>
+        {
+            Order?.Orders?.map((item)=> (
+                <tr className="border-b border-gray-400">
+                      <td className="px-4 py-2 text-left border-r border-gray-400">{item?.status == 'buy' ? currencyTakecurrent : item?.currencyMycurrent }</td>
+                <td className="px-4 py-2 text-left border-r border-gray-400">{item?.currencyTake} {item?.currencyTakecurrent}{' '}</td>
+                <td className="px-4 py-2 text-left border-r border-gray-400">{item?.currencyMy} {item?.currencyMycurrent}</td>
+                <td className="px-4 py-2 text-left border-r border-gray-400">{item?.Rate} GBP</td>
+              
+              </tr>
+            ))
+        }
+
+
+    </tbody>
+  </table>
+</div>
+
                     <div className="bg-gray-100 py-10  px-6 ">
                         <h2 className="md:text-4xl text-3xl text-center font-medium flex justify-center items-center gap-3">
                             {' '}

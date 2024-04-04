@@ -28,14 +28,16 @@ const Purchase = () => {
   return (
     <Container>
       <div className="lg:mt-20 mt-10 pb-40">
-        <h2 className="lg:text-3xl text-2xl font-medium md:text-start text-center">
+        <h2 className={`lg:text-3xl ${nextFrom == 3 ? 'hidden':''} text-2xl font-medium md:text-start text-center`}>
           {
             currentWay == 'Sell' ? <>Sell travel money</>:<>Order travel money</>
           }
           
         </h2>
-      
-        <Process no={nextFrom}></Process>
+        {
+          nextFrom == 3 ? '': <Process no={nextFrom}></Process>
+        }
+       
          {
           nextFrom == 3 ? '':<OrderSummary allTheitem={allTheitem} setAllTheItem={setAllTheItem} purchaseData={purchaseData}></OrderSummary>
          }
