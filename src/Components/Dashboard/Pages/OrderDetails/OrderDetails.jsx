@@ -65,14 +65,22 @@ Contact
 {Data?.Phone_Number}
 </div>
 </div>
-<div className="flex">
-<div className="py-3 border-r border-gray-400 font-semibold md:w-[20%] w-[30%] text-center bg-[#1a0d43] text-white">
-Address
-</div>
-<div className="border-gray-400 bg-gray-200 py-3 px-4 w-[80%] text-start">
-{Data?.Address}
-</div>
-</div>
+<div className="flex  border-b border-gray-400">
+      <div className="py-3 border-r border-gray-400 font-semibold md:w-[20%] w-[30%] text-center bg-[#1a0d43] text-white">
+        Address
+      </div>
+      <div className="border-gray-400 bg-gray-200 py-3 px-4 w-[80%] text-start">
+        {Data?.Address}
+      </div>
+    </div>
+    <div className="flex">
+      <div className="py-3 border-r border-gray-400 font-semibold md:w-[20%] w-[30%] text-center bg-[#1a0d43] text-white">
+        Pickup Location
+      </div>
+      <div className="border-gray-400 bg-gray-200 py-3 px-4 w-[80%] text-start">
+        {Data?.CheckingPoint}
+      </div>
+    </div>
 </div>
 </div>
 

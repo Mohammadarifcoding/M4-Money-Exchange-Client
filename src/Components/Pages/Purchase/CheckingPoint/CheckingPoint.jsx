@@ -36,11 +36,8 @@ const CheckingPoint = ({ setAddressSelected, setNextForm, nextFrom, currentWay }
             const First_Name = e.target.FirstName.value;
             const Last_Name = e.target.LastName.value;
             const Email = e.target.to_email.value;
-            const Confrim_Email = e.target.ConfromEmail.value;
+            const UserAddress = e.target.UserAddress.value;
             const Phone_Number = e.target.Number.value;
-            if (Email !== Confrim_Email) {
-                return toast('Emails doesnt match');
-            }
 
             if (!selected) {
                 return toast('Please select the rules');
@@ -51,7 +48,8 @@ const CheckingPoint = ({ setAddressSelected, setNextForm, nextFrom, currentWay }
                 Name: First_Name + ' ' + Last_Name,
                 Email: Email,
                 Phone_Number: Phone_Number,
-                Address: address,
+                CheckingPoint: address,
+                Address:UserAddress,
                 Orders: JSON.parse(localStorage.getItem('purchase')),
                 status: '',
                 RateFirst: OrdersData[0].Rate,
@@ -200,10 +198,10 @@ const CheckingPoint = ({ setAddressSelected, setNextForm, nextFrom, currentWay }
                             className=" border mt-4 md:max-w-[500px] sm:w-full px-3 py-2 text-lg border-gray-400 focus:outline-none  rounded-md"
                         />
                         <input
-                            name="ConfromEmail"
+                            name="UserAddress"
                             required
-                            type="email"
-                            placeholder="Confirm Email"
+                            type="text"
+                            placeholder="Your Address"
                             className=" border mt-4 md:max-w-[500px] sm:w-full px-3 py-2 text-lg border-gray-400 focus:outline-none  rounded-md"
                         />
                         <input
@@ -251,7 +249,7 @@ const CheckingPoint = ({ setAddressSelected, setNextForm, nextFrom, currentWay }
         {nextFrom == 3 ? (
                 <div>
 
-                <div className='flex lg:mb-20 mb-10  deleteButton justify-end '>
+                <div className='flex lg:mb-20 mb-7 deleteButton justify-end '>
                   <button onClick={handlePrint} className='px-4 py-2 bg-red-600 text-white'>Print</button>
                 </div>
                 {/* Currency Calculation */}
@@ -277,7 +275,7 @@ const CheckingPoint = ({ setAddressSelected, setNextForm, nextFrom, currentWay }
 </div>
 
 {/* User address */}
-<div className="overflow-hidden border mt-10 border-gray-400">
+<div className="overflow-hidden border mt-7 border-gray-400">
   <div className="px-4 py-2 border-b border-gray-400 overflow-auto bg-[#eb5552] text-white">
     <h1 className="text-xl font-semibold">Booking Details</h1>
   </div>
@@ -306,7 +304,7 @@ const CheckingPoint = ({ setAddressSelected, setNextForm, nextFrom, currentWay }
         {Order?.Phone_Number}
       </div>
     </div>
-    <div className="flex">
+    <div className="flex  border-b border-gray-400">
       <div className="py-3 border-r border-gray-400 font-semibold md:w-[20%] w-[30%] text-center bg-[#1a0d43] text-white">
         Address
       </div>
@@ -314,11 +312,19 @@ const CheckingPoint = ({ setAddressSelected, setNextForm, nextFrom, currentWay }
         {Order?.Address}
       </div>
     </div>
+    <div className="flex">
+      <div className="py-3 border-r border-gray-400 font-semibold md:w-[20%] w-[30%] text-center bg-[#1a0d43] text-white">
+        Pickup Location
+      </div>
+      <div className="border-gray-400 bg-gray-200 py-3 px-4 w-[80%] text-start">
+        {Order?.CheckingPoint}
+      </div>
+    </div>
   </div>
 </div>
 
 
-<div className="mt-10 flex flex-col gap-5 bg-Primary p-5 text-white">
+<div className="mt-10 flex flex-col gap-3 bg-Primary p-5 text-white">
   <h2 className="sm:text-lg text-base font-semibold">Important Notification</h2>
   <p className="text-sm">Please read carefully before you leave for the collection.</p>
   <p className="text-sm">Collect your Instore Branch collection order on the same day in between office hours. Kindly read the Terms and Conditions for payments and necessary supporting documents.</p>
