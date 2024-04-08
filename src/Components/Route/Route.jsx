@@ -23,6 +23,8 @@ import SignIn from '../Pages/SignIn/SignIn';
 import PrivateProvider from './../../Provider/PrivateProvider';
 import Privacy from './../Pages/Privacy/Privacy';
 import AllOrders from '../Dashboard/Pages/Orders/AllOrders';
+import CurrencyChart from './../Shared/CurrencyChart/CurrencyChart';
+import ScreenPage from '../Pages/ScreenPage/ScreenPage';
 
 
 const router = createBrowserRouter([
@@ -65,6 +67,10 @@ const router = createBrowserRouter([
             {
                 path:'/privacyPolicy',
                 element:<Privacy></Privacy>
+            },
+            {
+                path:'/screen',
+                element:<ScreenPage></ScreenPage>
             }
         ]
     },

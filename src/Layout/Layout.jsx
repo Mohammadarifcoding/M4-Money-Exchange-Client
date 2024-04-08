@@ -2,35 +2,24 @@ import { Helmet } from "react-helmet";
 import { Outlet } from "react-router-dom";
 import Footer from "../Components/Shared/Footer/Footer";
 import Navbar from "../Components/Shared/Navbar/Navbar";
+import {useLocation} from 'react-router-dom'
 
 
 const Layout = () => {
-    // const { data: curenc, isLoading:NotGettingCurrency } = useQuery({
-    //     queryKey: [`currrency${item?.value}`],
-    //     queryFn: async () => {
-    //         const fetchData = await axios.get(`https://api.apilayer.com/exchangerates_data/convert?to=${item.value}&from=GBP&amount=1`, {
-    //             headers: {
-    //                 apikey: 'T2xiIiLGT74lpNubi61MkKWOR0qu2s46'
-    //             }
-    //         });
-    //         return fetchData.data;
-    //     }
-    // });
-
-    // useEffect(()=>{
-    //    if(!NotGettingCurrency){
-    //       Axious.put(`/UpdateCurrencyPrice/${item?.value}`,{Rate : curenc?.info?.rate})
-    //       .then(res =>{
-    //         console.log(res.data)
-    //       })
-    //    }
-    // },[NotGettingCurrency,item.value,Axious])
+    const location = useLocation()
+    
 
     return (
         <div className="overflow-hidden ">
-            <Navbar></Navbar>
+              {
+                location.pathname == '/screen' || <Navbar></Navbar>
+              }
+            
             <Outlet></Outlet>
-            <Footer></Footer>
+            {
+                location.pathname == '/screen' || <Footer></Footer>
+              }
+            
             <Helmet>
         <meta name="description" content="Zero commission, competitive rates, and the convenience of click
 & collect at M4. Choose from over 70 currencies for your
