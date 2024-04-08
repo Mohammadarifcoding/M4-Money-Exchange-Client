@@ -17,17 +17,17 @@ const Features = () => {
       'Enhanced web rates',
       '0% commission'
     ],
-    vision:'Buy Currency',
+    vision:'Click and buy',
     link:'/purchase/EUR/Order',
     
   },{
     icon : '/Images/deal.png',
     feature : [
-      'Order online and we’ll deliver  to your door',
-      'FREE delivery on all orders £800 or more',
+      'Sell you unused currency online to better rates',
+      'Enhanced web rates',
       '0% commission'
     ],
-    vision:'Sell Currency',
+    vision:'Click and sell',
     link:'/purchase/EUR/Sell'
   }]
 
