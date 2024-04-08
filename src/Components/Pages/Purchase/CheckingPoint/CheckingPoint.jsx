@@ -69,7 +69,7 @@ const CheckingPoint = ({ setAddressSelected, setNextForm, nextFrom, currentWay }
                 UserInformation.status = 'buy';
                 UserInformation.secondTitle = `Collecting your order :`;
                 UserInformation.secondMessege = `When collecting your order, you will need to provide proof of ID in the form of photographic ID (passport or driving license). Please note that proof of address, such as a utility bill or a bank/credit card statement dated within the past 90 days, may also be needed in certain circumstances.`,
-               UserInformation.firstMessege = `Your order ${UserInformation.Order_Id} is currently being processed, and we will notify you when it is ready for collection from our Branch - ${UserInformation.Address}.`;
+               UserInformation.firstMessege = `Your order ${UserInformation.Order_Id} is currently being processed, and we will notify you when it is ready for collection from our Branch - ${UserInformation.CheckingPoint}.`;
                
             } else if (currentWay == 'Sell') {
                 UserInformation.title = 'Click & Sell';
@@ -121,7 +121,7 @@ const CheckingPoint = ({ setAddressSelected, setNextForm, nextFrom, currentWay }
             }
 
             Axious.post('/Order', UserInformation).then((res) => {
-                emailjs.sendForm('service_fgicbpv', 'template_3echwc8', tempForm, '4DvmwbJku2ELuw7VV').then((res) => {
+                emailjs.sendForm('service_fgicbpv', 'template_bwht1az', tempForm, '4DvmwbJku2ELuw7VV').then((res) => {
                     console.log(res);
                 });
                 setlastOrder(UserInformation);

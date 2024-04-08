@@ -57,7 +57,7 @@ const Orders = () => {
             if (result.isConfirmed) {
                 Axious.get(`/pendingToAceept/${orderId}`).then((res) => {
                     RefetchPendingOrder();
-                    emailjs.sendForm('service_geyk8rj', 'template_gt16753', tempForm, '-IllRWDI3WXoeT7lj').then((res) => {
+                    emailjs.sendForm('service_fgicbpv', 'template_3echwc8', tempForm, '4DvmwbJku2ELuw7VV').then((res) => {
                         console.log('email send');
                         Swal.fire({
                             title: 'Accepted!',
