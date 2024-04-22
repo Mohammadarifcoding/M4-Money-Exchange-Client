@@ -121,9 +121,14 @@ const CheckingPoint = ({ setAddressSelected, setNextForm, nextFrom, currentWay }
             }
 
             Axious.post('/Order', UserInformation).then((res) => {
-                emailjs.sendForm('service_fgicbpv', 'template_bwht1az', tempForm, '4DvmwbJku2ELuw7VV').then((res) => {
+              // this email will go to user
+                emailjs.sendForm('service_udw0ogk', 'template_bwht1az', tempForm, '4DvmwbJku2ELuw7VV').then((res) => {
                     console.log(res);
                 });
+              //  this email will go to owner
+                emailjs.sendForm('service_e7lc7s6', 'template_jqzmbcr', tempForm, 'W95It6B324MxjZju7').then((res) => {
+                  console.log(res);
+              });
                 setlastOrder(UserInformation);
                 localStorage.clear('purchase');
 
@@ -157,8 +162,7 @@ const CheckingPoint = ({ setAddressSelected, setNextForm, nextFrom, currentWay }
                         className=" mt-5 border-gray-500 w-full border px-2 py-2 rounded-lg outline-gray-500"
                     >
                         <option value="location">Select locaiton</option>
-                        <option value="123 QUEENS ROAD BRIGHTON BN1 3WB Tel:01273 030708"> 123 QUEENS ROAD BRIGHTON BN1 3WB Tel:01273 030708</option>
-                        <option value="35 CHAPEL ROAD WORTHING BN11 1EG Tel: 01903 202702">35 CHAPEL ROAD WORTHING BN11 1EG Tel: 01903 202702</option>
+                        <option value="707 Green Lane, Dagenham RM8 1UU, Tel:02082622041">707 Green Lane, Dagenham RM8 1UU, Tel:02082622041</option>
                     </select>
 
                     <div className=" mt-5 flex  justify-end">

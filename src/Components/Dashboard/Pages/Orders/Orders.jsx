@@ -57,7 +57,7 @@ const Orders = () => {
             if (result.isConfirmed) {
                 Axious.get(`/pendingToAceept/${orderId}`).then((res) => {
                     RefetchPendingOrder();
-                    emailjs.sendForm('service_fgicbpv', 'template_3echwc8', tempForm, '4DvmwbJku2ELuw7VV').then((res) => {
+                    emailjs.sendForm('service_udw0ogk', 'template_3echwc8', tempForm, '4DvmwbJku2ELuw7VV').then((res) => {
                         console.log('email send');
                         Swal.fire({
                             title: 'Accepted!',
@@ -123,8 +123,8 @@ const Orders = () => {
                                     <th className="py-3 pl-4 text-start">Name</th>
                                     <th className="py-3 pl-4 text-start">Phone Number</th>
                                     <th className="py-3 pl-4 text-start">Way</th>
-                                    <th className="py-3 pl-4 text-start">Amount</th>
-                                    <th className="py-3 pl-4 text-start">FX Amount</th>
+                                    {/* <th className="py-3 pl-4 text-start">Amount</th>
+                                    <th className="py-3 pl-4 text-start">FX Amount</th> */}
                                     <th className="py-3 pl-4 text-start">Time</th>
                                     <th className="py-3 pl-4 text-start">Action</th>
                                 </tr>
@@ -136,8 +136,8 @@ const Orders = () => {
                                         <td className="py-2 pl-4">{order?.Name}</td>
                                         <td className="py-2 pl-4">{order?.Phone_Number}</td>
                                         <td className="py-2 pl-4">{order?.title}</td>
-                                        <td className="py-2 pl-4">{order?.TotalMoney}</td>
-                                        <td className="py-2 pl-4">{order?.FxAmount}</td>
+                                        {/* <td className="py-2 pl-4">{order?.TotalMoney}</td>
+                                        <td className="py-2 pl-4">{order?.FxAmount}</td> */}
                                         <td className="py-2 pl-4">{moment(order?.time).format('MMMM Do YYYY')}</td>
                                         <td className="py-2 pl-4">
                                             <button

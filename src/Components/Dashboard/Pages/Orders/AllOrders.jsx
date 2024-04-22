@@ -72,8 +72,8 @@ const AllOrders = () => {
                                 <th className="py-3 pl-4 text-start">Name</th>
                                 <th className="py-3 pl-4 text-start">Phone Number</th>
                                 <th className="py-3 pl-4 text-start">Way</th>
-                                <th className="py-3 pl-4 text-start">Amount</th>
-                                <th className="py-3 pl-4 text-start">FX Amount</th>
+                                {/* <th className="py-3 pl-4 text-start">Amount</th>
+                                <th className="py-3 pl-4 text-start">FX Amount</th> */}
                                 <th className="py-3 pl-4 text-start">Time</th>
                                 <th className="py-3 pl-4 text-start">Status</th>
                                 <th className="py-3 pl-4 text-start">Action</th>
@@ -86,8 +86,8 @@ const AllOrders = () => {
                                     <td className="py-2 pl-4">{order?.Name}</td>
                                     <td className="py-2 pl-4">{order?.Phone_Number}</td>
                                     <td className="py-2 pl-4">{order?.title}</td>
-                                    <td className="py-2 pl-4">{order?.TotalMoney}</td>
-                                    <td className="py-2 pl-4">{order?.FxAmount}</td>
+                                    {/* <td className="py-2 pl-4">{order?.TotalMoney}</td>
+                                    <td className="py-2 pl-4">{order?.FxAmount}</td> */}
                                     <td className="py-2 pl-4">{moment(order?.time).format('MMMM Do YYYY')}</td>
                                     <td className="py-2 pl-4">{order?.Status}</td>
                                     <div className='flex gap-3 mx-2'>

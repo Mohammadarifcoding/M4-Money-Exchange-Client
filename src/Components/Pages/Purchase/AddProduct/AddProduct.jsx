@@ -30,7 +30,7 @@ const AddProduct = ({ setPurchaseeData, purchaseData, allTheitem, setAllTheItem,
     //     queryFn: async () => {
     //         const fetchData = await axios.get(`https://api.apilayer.com/exchangerates_data/convert?to=${currencyData}&from=GBP&amount=1`, {
     //             headers: {
-    //                 apikey: 'T2xiIiLGT74lpNubi61MkKWOR0qu2s46'
+    //                 apikey: 'vKYNotQBrR4Sf1aiN7bPEPN9gEr5OnyU'
     //             }
     //         });
     //         return fetchData.data;

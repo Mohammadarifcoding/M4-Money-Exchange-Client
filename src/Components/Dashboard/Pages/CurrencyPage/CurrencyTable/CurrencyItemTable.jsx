@@ -2,11 +2,11 @@ import { useQuery } from '@tanstack/react-query';
 import axios from 'axios';
 import { useContext, useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
+import Swal from 'sweetalert2';
 import UseAxious from '../../../../../Hook/UseAxious';
 import UseCurrency from '../../../../../Hook/UseCurrency';
 import UseUpsell from '../../../../../Hook/UseUpsell';
 import { AuthContext } from '../../../../../Provider/AuthProvider';
-import Swal from 'sweetalert2';
 
 const CurrencyItemTable = ({ item }) => {
     const { UpdateCurrencyData, SetUpdateCurrencyData } = useContext(AuthContext);
@@ -31,7 +31,7 @@ const CurrencyItemTable = ({ item }) => {
         queryFn: async () => {
             const fetchData = await axios.get(`https://api.apilayer.com/exchangerates_data/convert?to=${item.value}&from=GBP&amount=1`, {
                 headers: {
-                    apikey: 'T2xiIiLGT74lpNubi61MkKWOR0qu2s46'
+                    apikey: 'vKYNotQBrR4Sf1aiN7bPEPN9gEr5OnyU'
                 }
             });
             const updateData = await Axious.put(`/UpdateCurrencyPrice/${item?.value}`, { Rate: fetchData.data?.info?.rate });
@@ -60,7 +60,7 @@ const CurrencyItemTable = ({ item }) => {
     //     queryFn: async () => {
     //         const fetchData = await axios.get(`https://api.apilayer.com/exchangerates_data/convert?to=${item?.value}&from=GBP&amount=1`, {
     //             headers: {
-    //                 apikey: 'T2xiIiLGT74lpNubi61MkKWOR0qu2s46'
+    //                 apikey: 'vKYNotQBrR4Sf1aiN7bPEPN9gEr5OnyU'
     //             }
     //         });
     //         return fetchData.data;
