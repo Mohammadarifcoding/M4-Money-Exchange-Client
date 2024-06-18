@@ -1,7 +1,5 @@
 import { useState } from "react";
 import Container from "../../Shared/Container/Container";
-import { IoIosArrowForward } from "react-icons/io";
-
 import OrderSummary from "./OrderSummary/OrderSummary";
 import AddProduct from "./AddProduct/AddProduct";
 import CheckingPoint from "./CheckingPoint/CheckingPoint";
