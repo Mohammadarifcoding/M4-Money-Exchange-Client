@@ -1,6 +1,7 @@
 import { FaFacebookF, FaInstagram, FaMapLocationDot, FaPhoneVolume, FaXTwitter } from "react-icons/fa6";
 import { IoIosMail } from "react-icons/io";
 import Container from "../Container/Container";
+import { Link } from 'react-router-dom';
 
 const Footer = () => {
     return (
@@ -10,32 +11,30 @@ const Footer = () => {
   <Container>
 <div className="container mx-auto ">
  <div className="flex flex-wrap justify-between">
+  <div className="w-full md:w-1/2 lg:w-1/4 mb-4 md:mb-0">
+      <img src="/Images/logo.png" className="w-full"/>
+  </div>
    <div className="w-full md:w-1/2 lg:w-1/4 mb-4 md:mb-0">
      <h2 className="text-2xl font-bold mb-3">CORPORATE</h2>
      <ul className="list-none">
        <li className="mb-2">
-         <a href="#home" className="hover:text-gray-300">
+         <Link to={"/"} className="hover:text-gray-300">
            Home
-         </a>
+         </Link>
        </li>
-       <li className="mb-2">
-         <a href="#about" className="hover:text-gray-300">
-           About M4
-         </a>
-       </li>
-       <li className="mb-2">
+       {/* <li className="mb-2">
          <a href="#how-it-works" className="hover:text-gray-300">
            How It Works
          </a>
-       </li>
+       </li> */}
        <li className="mb-2">
-         <a href="#send-money" className="hover:text-gray-300">
-           Send Money To
-         </a>
+         <Link to={"/exchangeRates"} className="hover:text-gray-300">
+           Exchange Rates
+         </Link>
        </li>
      </ul>
    </div>
-   <div className="w-full md:w-1/2 lg:w-1/4 mb-4 md:mb-0">
+   {/* <div className="w-full md:w-1/2 lg:w-1/4 mb-4 md:mb-0">
      <h2 className="text-2xl font-bold mb-3">LEGAL INFORMATION</h2>
      <ul className="list-none">
        <li className="mb-2">
@@ -59,29 +58,29 @@ const Footer = () => {
          </a>
        </li>
      </ul>
-   </div>
+   </div> */}
    <div className="w-full md:w-1/2 lg:w-1/4 mb-4 md:mb-0">
      <h2 className="text-2xl font-bold mb-3">SUPPORT</h2>
      <ul className="list-none">
        <li className="mb-2">
-         <a href="#help" className="hover:text-gray-300">
-           Help
-         </a>
+         <Link to="/contact" className="hover:text-gray-300">
+           Contact Us
+         </Link>
        </li>
-       <li className="mb-2">
+       {/* <li className="mb-2">
          <a href="#support" className="hover:text-gray-300">
            Support
          </a>
-       </li>
+       </li> */}
        <li className="mb-2">
-         <a href="#privacy-policy" className="hover:text-gray-300">
+         <Link to="/privacyPolicy" className="hover:text-gray-300">
            Privacy Policy
-         </a>
+         </Link>
        </li>
        <li className="mb-2">
-         <a href="#terms-conditions" className="hover:text-gray-300">
+         <Link to="/termsCoditition" className="hover:text-gray-300">
            Terms & Conditions
-         </a>
+         </Link>
        </li>
      </ul>
    </div>
@@ -101,9 +100,10 @@ Copyright © 2024 M4 All rights reserved.</h2>
  <p>Copyright © 2024 M4 All rights reserved.</p>
  <div>
      <ul className="flex gap-x-4 text-xl items-center">
-         <li><FaFacebookF/></li>
-         <li><FaInstagram/></li>
-         <li><FaXTwitter/></li>
+      <Link to={"https://www.facebook.com/share/1BUhEVKu3a/?mibextid=LQQJ4d"}>   <li><FaFacebookF/></li></Link>
+      
+         {/* <li><FaInstagram/></li>
+         <li><FaXTwitter/></li> */}
          
 
      </ul>
