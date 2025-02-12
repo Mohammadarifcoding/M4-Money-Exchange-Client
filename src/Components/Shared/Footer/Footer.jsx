@@ -93,8 +93,8 @@ const Footer = () => {
  </div>
 </div >
 {/* copyright Section */}
-<h2 className="text-white text-[15px] mt-16  mb-3 ">M4FX IS A TRADING NAME OF M4 TRADING LIMITED,REGISTERED IN ENGLAND AND WALES UNDER COMPANY NUMBER 10520708,REGISTERED ADDRESS:707 GREEN LANE, DAGENHAM, RM8 1UU
-Copyright © 2024 M4 All rights reserved.</h2>
+<h2 className="text-white text-[15px] mt-16  mb-3 ">M4 Travels IS A TRADING NAME OF M4 TRADING LIMITED,REGISTERED IN ENGLAND AND WALES UNDER COMPANY NUMBER 10520708,REGISTERED ADDRESS:707 GREEN LANE, DAGENHAM, RM8 1UU
+Copyright © 2024 M4 All rights reserved.</h2>
 <div className="border-t-2">
 <div className=" px-20 py-4 flex justify-between ">
  <p>Copyright © 2024 M4 All rights reserved.</p>
