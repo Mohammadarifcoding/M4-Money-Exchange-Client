@@ -31,7 +31,7 @@ const CurrencyItemTable = ({ item }) => {
         queryFn: async () => {
             const fetchData = await axios.get(`https://api.apilayer.com/exchangerates_data/convert?to=${item.value}&from=GBP&amount=1`, {
                 headers: {
-                    apikey: 'vKYNotQBrR4Sf1aiN7bPEPN9gEr5OnyU'
+                    apikey: 'e54hYFC2Xu16iaXTElyJiCm96bCQpmT0'
                 }
             });
             const updateData = await Axious.put(`/UpdateCurrencyPrice/${item?.value}`, { Rate: fetchData.data?.info?.rate });
@@ -60,7 +60,7 @@ const CurrencyItemTable = ({ item }) => {
     //     queryFn: async () => {
     //         const fetchData = await axios.get(`https://api.apilayer.com/exchangerates_data/convert?to=${item?.value}&from=GBP&amount=1`, {
     //             headers: {
-    //                 apikey: 'vKYNotQBrR4Sf1aiN7bPEPN9gEr5OnyU'
+    //                 apikey: 'e54hYFC2Xu16iaXTElyJiCm96bCQpmT0'
     //             }
     //         });
     //         return fetchData.data;
